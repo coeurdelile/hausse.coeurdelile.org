@@ -43,13 +43,14 @@ const mwxxs = css`
 `;
 
 interface PageProps {
-  body: string;
+  intro: string;
+  outro: string;
   title: string;
   description: string;
   image: string;
 }
 
-const Index = ({ body, title, description, image }: PageProps) => {
+const Index = ({ intro, outro, title, description, image }: PageProps) => {
   const { t } = useSiteData();
 
   return (
@@ -77,7 +78,7 @@ const Index = ({ body, title, description, image }: PageProps) => {
       <div className="max-w-xl mx-auto px-4 mb-8">
         <article
           className="prose max-w-xl mb-8"
-          dangerouslySetInnerHTML={{ __html: body }}
+          dangerouslySetInnerHTML={{ __html: intro }}
         />
         <div
           className="mb-12 px-4 py-3 leading-normal bg-pink-50 text-gray-900 border border-black rounded-lg"
@@ -95,6 +96,10 @@ const Index = ({ body, title, description, image }: PageProps) => {
       <Calculator />
       <div className="max-w-xl mx-auto px-4 mb-16">
         <div className="prose mb-12">
+          <aside
+            className="max-w-xl mb-8"
+            dangerouslySetInnerHTML={{ __html: outro }}
+          />
           <hr />
         </div>
         <img className="mx-auto w-2/3 mb-8" src={logo} />
@@ -130,7 +135,7 @@ const Button: React.FC<{ className?: string }> = ({
 }) => {
   return (
     <button
-      className={`transition-colors duration-150 rounded-lg focus:shadow-outline ${className}`}
+      className={`transition-colors duration-150 rounded-lg ${className}`}
     >
       {children}
     </button>
@@ -294,8 +299,8 @@ const Calculator = () => {
           />
         </Section>
       </div>
-      <div className="max-w-xl mx-auto px-4 mb-16">
-        <h2 className={`${headings} text-4xl font-bold italic uppercase mb-4`}>
+      <div className="max-w-xl mx-auto px-4 mb-8">
+        <h2 className={`${headings} text-5xl font-bold italic uppercase mb-4`}>
           {t("estimate")}
         </h2>
         {estimate ? (
@@ -309,7 +314,9 @@ const Calculator = () => {
             </div>
           </div>
         ) : (
-          <div className="text-center text-xl font-bold">{t("needfinish")}</div>
+          <div className="text-center text-2xl font-bold">
+            {t("needfinish")}
+          </div>
         )}
       </div>
     </>
@@ -512,27 +519,31 @@ export const getStaticProps: GetStaticProps<
   const { loadMdx } = await import("~/lib/load-mdx");
   const { lang } = params!;
 
-  const path = `content/pages/home/home.${lang}.md`;
+  const introPath = `content/pages/home-intro/intro.${lang}.md`;
+  const outroPath = `content/pages/home-outro/outro.${lang}.md`;
 
-  const { contents, attributes } = await loadMdx(path);
+  const { contents: intro, attributes } = await loadMdx(introPath);
 
   const title = attributes["title"];
   const description = attributes["description"];
   const image = attributes["image"];
 
   if (!title) {
-    throw new Error(`title must not be empty! (in ${path})`);
+    throw new Error(`title must not be empty! (in ${introPath})`);
   }
   if (!description) {
-    throw new Error(`description must not be empty! (in ${path})`);
+    throw new Error(`description must not be empty! (in ${introPath})`);
   }
   if (!description) {
-    throw new Error(`image must not be empty! (in ${path})`);
+    throw new Error(`image must not be empty! (in ${introPath})`);
   }
+
+  const { contents: outro } = await loadMdx(outroPath);
 
   return {
     props: {
-      body: contents,
+      intro,
+      outro,
       title,
       description,
       image,

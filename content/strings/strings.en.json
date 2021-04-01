@@ -4,7 +4,7 @@
   "goto-calc": "Use the Calculator!",
   "desktop": "If you don't have municipal and school tax values on hand for the building you live in, we recommend you use this tool on a desktop computer. Some of the government websites you’ll need to use to find the required values are not optimized for mobile devices.",
   "calc": "Rent Increase Estimate Calculator",
-  "help-find": "How do I find this?",
+  "help-find": "How do I find these amounts?",
   "err-amount": "Enter a valid amount.",
   "err-sel": "Make a valid selection.",
 
@@ -36,5 +36,5 @@
   "workdwelling-help": "How much did your landlord spend on major work (including improvements or major repairs) for your dwelling specifically, if any?",
 
   "estimate": "Your estimated rent increase",
-  "needfinish": "Fill in all the required fields above to get your estimate!"
+  "needfinish": "Fill in all the required fields above to see your estimate here!"
 }
