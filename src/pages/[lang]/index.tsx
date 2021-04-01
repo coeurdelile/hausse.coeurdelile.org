@@ -84,8 +84,8 @@ const Index = ({ intro, outro, title, description, image }: PageProps) => {
           dangerouslySetInnerHTML={{ __html: intro }}
         />
         <div
-          className="mb-12 px-4 py-3 leading-normal bg-pink-50 text-gray-900 border border-black rounded-lg"
-          role="alert"
+          className="mb-12 px-4 py-3 bg-pink-50 text-gray-900 border border-black rounded-lg"
+          role="complementary"
         >
           <p>{t("desktop")}</p>
         </div>
@@ -306,21 +306,23 @@ const Calculator = () => {
         <h2 className={`${headings} text-5xl font-bold italic uppercase mb-4`}>
           {t("estimate")}
         </h2>
-        {estimate ? (
-          <div>
-            <div
-              className={`${headings} text-center text-8xl font-bold italic`}
-            >
-              {lang === "en"
-                ? `$${estimate}`
-                : `${estimate.replace(".", ",")} $`}
+        <div className="p-6 bg-pink-50 border border-black rounded-lg">
+          {estimate ? (
+            <div>
+              <div
+                className={`${headings} text-center text-8xl font-bold italic`}
+              >
+                {lang === "en"
+                  ? `$${estimate}`
+                  : `${estimate.replace(".", ",")} $`}
+              </div>
             </div>
-          </div>
-        ) : (
-          <div className="text-center text-2xl font-bold">
-            {t("needfinish")}
-          </div>
-        )}
+          ) : (
+            <div className="text-center text-2xl font-bold">
+              {t("needfinish")}
+            </div>
+          )}
+        </div>
       </div>
     </>
   );
