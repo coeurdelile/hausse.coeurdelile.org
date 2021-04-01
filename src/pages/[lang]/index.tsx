@@ -38,6 +38,10 @@ const hr = css`
   border-color: "#101316";
 `;
 
+const mwxxs = css`
+  max-width: 10rem;
+`;
+
 interface PageProps {
   body: string;
   title: string;
@@ -392,13 +396,13 @@ const NumberGroup = React.forwardRef<
     return (
       <div className="mb-4">
         <div className="md:flex md:items-center">
-          <div className="mb-1 md:mb-0 md:w-1/2 md:pr-2">
+          <div className="mb-2 md:mb-0 md:w-3/4 md:pr-2">
             <label id={`${name}-label`}>{label}</label>
-            {/* {required && (
+            {required && (
               <span aria-hidden className="ml-1 font-bold">
                 *
               </span>
-            )} */}
+            )}
             {help && (
               <span
                 className="ml-4 font-bold text-gray-400 cursor-pointer"
@@ -408,7 +412,7 @@ const NumberGroup = React.forwardRef<
               </span>
             )}
           </div>
-          <div className="md:w-1/2 md:flex-grow">
+          <div className={`${mwxxs} ml-auto md:ml-0 md:w-1/4`}>
             <div className="relative text-gray-700">
               <input
                 className={`w-full rounded-lg ${prefix ? "pl-8" : ""} ${
@@ -430,7 +434,7 @@ const NumberGroup = React.forwardRef<
           </div>
         </div>
         <div className="md:flex md:justify-end">
-          <div className="md:w-1/2">
+          <div className={`${mwxxs} ml-auto md:ml-0 md:w-1/4`}>
             {errors && (
               <span className="text-xs text-red-700" id={`${name}-error`}>
                 {errorText}
