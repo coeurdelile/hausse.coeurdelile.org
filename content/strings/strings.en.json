@@ -3,10 +3,15 @@
   "goto-calc": "Use the Calculator!",
   "desktop": "If you don't have municipal and school tax values on hand for the building you live in, we recommend you use this tool on a desktop computer. Some of the government websites you’ll need to use to find the required values are not optimized for mobile devices.",
   "calc": "Rent Increase Estimate Calculator",
+  "help-find": "How do I find this?",
   "err-amount": "Enter an amount.",
+
   "section-dwelling": "Information about your dwelling",
-  "rent-label": "Your current monthly rent",
+  "rent-label": "What is your current monthly rent?",
   "rent-help": "Enter the amount of your monthly rent (before any increase proposed by the landlord).",
+  "dwellings-label": "How many dwellings are in your building?",
+  "dwellings-help": "Several calculations are impacted by the total number of dwellings in your building.",
+
   "heat-label": "How is your heating paid?",
   "heat-help": "How you pay for heating impacts the estimate.",
   "I pay for heating myself": "I pay for heating myself",
@@ -14,6 +19,6 @@
   "My landlord pays for gas heating": "My landlord pays for gas heating",
   "My landlord pays for oil heating": "My landlord pays for oil heating",
 
-  "Factor in municipal taxes for the building": "Factor in municipal taxes for the building",
-  "How do I find this?": "How do I find this?"
+  "section-municipal": "Municipal taxes for the building"
+
 }

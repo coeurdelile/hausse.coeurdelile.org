@@ -107,58 +107,72 @@ const Index = ({ body, title, description, image }: PageProps) => {
   );
 };
 
-/*
-
-{errors.rent && (
-              <span className="text-xs text-red-700" id="renthelp">
-                {t("err-amount")}
-              </span>
-            )}
-*/
-
 const Calculator = () => {
-  const { register, errors } = useForm<{ rent: number; heat: number }>({
+  const { register, errors } = useForm<{
+    rent: number;
+    dwellings: number;
+    heat: number;
+  }>({
     mode: "onTouched",
   });
   const { t } = useSiteData();
 
   return (
     <div className="max-w-2xl px-4 mx-auto mb-16">
-      <h2 className={subheader}>{t("section-dwelling")}</h2>
-      <InputGroup
-        name="rent"
-        type="number"
-        placeholder="500.00"
-        prefix="$"
-        label={t("rent-label")}
-        help={t("rent-help")}
-        errors={errors.rent}
-        errorText={t("err-amount")}
-        ref={register({ required: true })}
-      />
-      <SelectGroup
-        name="heat"
-        options={[
-          t("I pay for heating myself"),
-          t("My landlord pays for electric heating"),
-          t("My landlord pays for gas heating"),
-          t("My landlord pays for oil heating"),
-        ]}
-        label={t("heat-label")}
-        help={t("heat-help")}
-        errors={errors.heat}
-        errorText={t("err-amount")}
-        ref={register({ required: true })}
-      />
+      <div className="mb-6">
+        <h2 className={subheader}>{t("section-dwelling")}</h2>
+        <NumberGroup
+          name="rent"
+          placeholder="500.00"
+          prefix="$"
+          label={t("rent-label")}
+          help={t("rent-help")}
+          errors={errors.rent}
+          errorText={t("err-amount")}
+          ref={register({ required: true })}
+        />
+        <NumberGroup
+          name="dwellings"
+          placeholder="5"
+          label={t("dwellings-label")}
+          help={t("dwellings-help")}
+          errors={errors.dwellings}
+          errorText={t("err-amount")}
+          ref={register({
+            required: true,
+            pattern: /\d{1,4}/,
+            validate: {
+              positive: (value) => parseInt(value, 10) > 0,
+              lessThan10000: (value) => parseInt(value, 10) < 10_000,
+              wholeNumber: (value) =>
+                parseInt(value, 10) === Math.round(parseInt(value, 10)),
+            },
+          })}
+        />
+        <SelectGroup
+          name="heat"
+          options={[
+            t("I pay for heating myself"),
+            t("My landlord pays for electric heating"),
+            t("My landlord pays for gas heating"),
+            t("My landlord pays for oil heating"),
+          ]}
+          label={t("heat-label")}
+          help={t("heat-help")}
+          errors={errors.heat}
+          errorText={t("err-amount")}
+          ref={register({ required: true })}
+        />
+      </div>
+      <h2 className={subheader}>{t("section-municipal")}</h2>
     </div>
   );
 };
 
-const InputGroup = React.forwardRef<
+const NumberGroup = React.forwardRef<
   HTMLInputElement,
   {
     name: string;
-    type: string;
     placeholder: string;
     prefix?: string;
     label: string;
@@ -166,55 +180,50 @@ const InputGroup = React.forwardRef<
     errors?: FieldError;
     errorText: string;
   }
->(
-  (
-    { name, type, placeholder, prefix, label, help, errors, errorText },
-    ref
-  ) => {
-    return (
-      <div className="mb-4">
-        <div className="md:flex md:items-center">
-          <div className="mb-1 md:mb-0 md:w-1/2">
-            <label id={`${name}-label`}>{label}</label>
-            <span className="ml-4 font-bold text-gray-400">
-              <abbr title={help}>?</abbr>
-            </span>
-          </div>
-          <div className="md:w-1/2 md:flex-grow">
-            <div className="relative text-gray-700">
-              <input
-                className={`w-full rounded-lg ${prefix ? "pl-8" : ""} ${
-                  errors ? "border-red-700" : ""
-                }`}
-                name={name}
-                type={type}
-                placeholder={placeholder}
-                aria-labelledby={`${name}-label`}
-                aria-describedby={`${name}-error`}
-                ref={ref}
-              />
-              {prefix && (
-                <div className="absolute inset-y-0 left-0 flex items-center px-3 pointer-events-none">
-                  {prefix}
-                </div>
-              )}
-            </div>
-          </div>
+>(({ name, placeholder, prefix, label, help, errors, errorText }, ref) => {
+  return (
+    <div className="mb-4">
+      <div className="md:flex md:items-center">
+        <div className="mb-1 md:mb-0 md:w-1/2">
+          <label id={`${name}-label`}>{label}</label>
+          <span className="ml-4 font-bold text-gray-400">
+            <abbr title={help}>?</abbr>
+          </span>
         </div>
-        <div className="md:flex md:justify-end">
-          <div className="md:w-1/2">
-            {errors && (
-              <span className="text-xs text-red-700" id={`${name}-error`}>
-                {errorText}
-              </span>
+        <div className="md:w-1/2 md:flex-grow">
+          <div className="relative text-gray-700">
+            <input
+              className={`w-full rounded-lg ${prefix ? "pl-8" : ""} ${
+                errors ? "border-red-700" : ""
+              }`}
+              name={name}
+              type="number"
+              placeholder={placeholder}
+              aria-labelledby={`${name}-label`}
+              aria-describedby={`${name}-error`}
+              ref={ref}
+            />
+            {prefix && (
+              <div className="absolute inset-y-0 left-0 flex items-center px-3 pointer-events-none">
+                {prefix}
+              </div>
             )}
           </div>
         </div>
       </div>
-    );
-  }
-);
-InputGroup.displayName = "InputGroup";
+      <div className="md:flex md:justify-end">
+        <div className="md:w-1/2">
+          {errors && (
+            <span className="text-xs text-red-700" id={`${name}-error`}>
+              {errorText}
+            </span>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+});
+NumberGroup.displayName = "InputGroup";
 
 const SelectGroup = React.forwardRef<
   HTMLSelectElement,
