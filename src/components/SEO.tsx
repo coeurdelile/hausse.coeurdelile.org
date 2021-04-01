@@ -16,7 +16,7 @@ const SEO = ({
   description?: string;
   ogTitleOverride?: string;
 }) => {
-  const { t } = useSiteData();
+  const { t, lang } = useSiteData();
 
   const resolvedTitle = `${title} — ${t("siteName")}`;
   const resolvedDescription = description || t("site_description");
@@ -42,7 +42,7 @@ const SEO = ({
         key="og:description"
         content={resolvedDescription}
       />
-      <meta property="og:image" content={`${domain}/images/peckbldg.png`} />
+      <meta property="og:image" content={`${domain}/og-${lang}.png`} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content={twitter} />
     </Head>
