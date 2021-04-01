@@ -1,14 +1,14 @@
 ---
 title: Refuse ta Hausse!
-description: A rent increase estimation tool and useful info about your right to refuse a rent hike in Montréal.
+description: Un outil d'estimation d'augmentation de loyer et des infos utiles concernant votre droit de refuser une hausse à Montréal.
 image: /images/refuse-fr.svg
 ---
 # C'est l'heure de refuser<br />ta hausse de loyer!
 
-In Québec, landlords are only entitled to increase residential rents **at most** by a certain percentage. This percentage is calculated for each unit of housing based on amounts such as the landlord’s total revenue for the building, the amount of municipal and school tax they pay, and improvements or repairs they’ve made over the past year.
+Au Québec, le Tribunal administratif du logement (TAL) fournit à chaque année des calculs pour déterminer ce qui constituerait une augmentation «raisonnable» du loyer mensuel. Cette augmentation est généralement différente pour chaque unité de logement et elle est basée sur des montants tels le revenu total du propriétaire sur l'immeuble, la taxe municipale et la taxe scolaire, et les améliorations ou réparations que le propriétaire aurait effectué au cours de la dernière année.
 
-**Many landlords issue rent increases far in excess of this calculated amount.** The Comité logement de la Petite Patrie estimates that in the neighbourhood of Petite Patrie, [**the average acceptable rent increase for this year should not exceed $1.00**](https://comitelogementpetitepatrie.org/vos-droits/outil-calcul-hausse-loyer-2021/). If your landlord issues a rent increase larger than the maximum allowed amount and you accept it, you may be obligated to continue to pay it even if you later realize that it should have been lower.
+De nombreux propriétaires accordent des augmentations de loyer bien supérieures à ce montant «raisonnable». Le Comité logement de la Petite Patrie estime que dans leur quartier, [**l'augmentation moyenne acceptable du loyer pour l’année 2021 ne devrait pas dépasser 1,00 $**](https://comitelogementpetitepatrie.org/vos-droits/outil-calcul-hausse-loyer-2021/). Si votre propriétaire vous suggère une augmentation de loyer supérieure au montant maximal autorisé et que vous l'acceptez, vous pourriez être obligé·e de continuer à payer ce montant même si vous vous rendez compte plus tard que l’augmentation aurait dû être plus basse.
 
-**You have the right to refuse** an increase that is in excess of the calculated maximum permissible amount. Your landlord will then need to propose a lower amount, or ask the Tribunal du logement to intervene and decide the final increase. **You may even be entitled to a decrease in rent** as a result of changes in tax and energy rates. As a tenant, there’s no risk to you in refusing this increase — at worst you’ll be informed that it’s within the permissible increase amount for your dwelling.
+**Vous avez le droit de refuser une hausse de loyer.** Votre propriétaire devra alors proposer un montant inférieur, ou demander au Tribunal du logement d'intervenir et de décider de l'augmentation finale. **Il se peut même que vous ayez droit à une baisse de loyer** à la suite de changements dans les taux d'imposition et d'énergie. En tant que locataire, vous ne risquez rien en refusant cette augmentation. Au pire, on vous dira qu'elle se situe dans les limites d’une hausse «raisonnable».
 
-## Use our tool below to estimate the maximum permissible increase for this year for your dwelling.
+## Utilisez notre outil ci-dessous pour estimer l'augmentation maximale «raisonnable» pour cette année pour votre logement.

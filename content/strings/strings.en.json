@@ -2,7 +2,7 @@
   "siteName": "Cœur-de-l'Île Antigentrification",
 
   "goto-calc": "Use the Calculator!",
-  "desktop": "If you don't have municipal and school tax values on hand for the building you live in, we recommend you use this tool on a desktop computer. Some of the government websites you’ll need to use to find the required values are not optimized for mobile devices.",
+  "desktop": "If you don't have municipal and school tax values on hand for the building you live in, we recommend you use this tool on a computer. Some of the government websites you’ll need to use to find the required values are not optimized for mobile devices.",
   "calc": "Rent Increase Estimate Calculator",
   "help-find": "How do I find these amounts?",
   "err-amount": "Enter a valid amount.",
@@ -15,11 +15,11 @@
   "dwellings-help": "How many separate dwellings (rented or not) are in your building? For example, a triplex where no floors are subdivided might typically have 3 units.",
 
   "heat-label": "How is your heating paid?",
-  "heat-help": "How you pay for heating impacts the estimate.",
+  "heat-help": "The TAL’s “reasonable” increase calculator factors in whether your or your landlord pay for the heating in your dwelling. If they pay for it, different heating methods carry different percentage rates.",
   "I pay for heating myself": "I pay for heating myself",
   "My landlord pays for electric heating": "My landlord pays for electric heating",
   "My landlord pays for gas heating": "My landlord pays for gas heating",
-  "My landlord pays for oil heating": "My landlord pays for oil heating",
+  "My landlord pays for oil heating": "My landlord pays for oil (or other) heating",
 
   "section-municipal": "Municipal taxes for the building",
   "muni2021-label": "Municipal tax for 2021",
@@ -30,7 +30,7 @@
   "school2020-label": "School tax for 2019-2020",
 
   "section-work": "Major improvements, repairs or other work",
-  "workbuilding-label": "Amount spent on major work for the building",
+  "workbuilding-label": "Amount spent on major work for the whole building",
   "workbuilding-help": "How much did your landlord spend on major work (including improvements or major repairs) for the building overall, if any?",
   "workdwelling-label": "Amount spent on major work for your dwelling specifically",
   "workdwelling-help": "How much did your landlord spend on major work (including improvements or major repairs) for your dwelling specifically, if any?",
