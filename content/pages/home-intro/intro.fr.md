@@ -1,9 +1,9 @@
 ---
-title: Refuse Ta Hausse!
+title: Refuse ta Hausse!
 description: A rent increase estimation tool and useful info about your right to refuse a rent hike in Montréal.
 image: /images/refuse-fr.svg
 ---
-# It’s time to refuse<br />your rent increase!
+# C'est l'heure de refuser<br />ta hausse de loyer!
 
 In Québec, landlords are only entitled to increase residential rents **at most** by a certain percentage. This percentage is calculated for each unit of housing based on amounts such as the landlord’s total revenue for the building, the amount of municipal and school tax they pay, and improvements or repairs they’ve made over the past year.
 
