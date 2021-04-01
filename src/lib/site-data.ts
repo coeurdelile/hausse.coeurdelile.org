@@ -1,20 +1,20 @@
 import { useRouter } from "next/router";
 
 import en from "content/strings/strings.en.json";
-// import fr from "content/strings/strings.fr.json";
+import fr from "content/strings/strings.fr.json";
 
 export const DEFAULT_LANG = "en";
 
 export const langs = {
   en: "English",
-  // fr: "Français",
+  fr: "Français",
 } as const;
 
 export const langList = Object.keys(langs);
 
 const localeData: { [lang: string]: Record<string, string> } = {
   en,
-  // fr,
+  fr,
 };
 
 export function useSiteData() {

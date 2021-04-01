@@ -51,12 +51,15 @@ interface PageProps {
 }
 
 const Index = ({ intro, outro, title, description, image }: PageProps) => {
-  const { t } = useSiteData();
+  const { t, lang } = useSiteData();
 
   return (
     <>
       <SEO title={title} description={description} ogTitleOverride={title} />
       <img className="absolute top-4 left-4 w-16" src={logo} />
+      <div className="absolute top-4 right-4 w-16">
+        {lang === "en" ? <a href="/fr">Français</a> : <a href="/en">English</a>}
+      </div>
       <img
         className="mx-auto px-2 md:px-0 w-full md:w-2/3 max-w-xl mt-16 mb-16"
         src={image}

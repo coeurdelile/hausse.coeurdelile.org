@@ -24,9 +24,9 @@ const SEO = ({
   return (
     <Head>
       <title>{resolvedTitle}</title>
-      {/* {langList.map((l) => (
+      {langList.map((l) => (
         <link key={l} rel="alternate" hrefLang={l} href={`${domain}/${l}`} />
-      ))} */}
+      ))}
       <meta
         name="description"
         key="description"

@@ -5,11 +5,11 @@
 [[plugins]]
   package = "netlify-plugin-cache-nextjs"
 
-# [[redirects]]
-#  from = "/*"
-#  to = "/fr/:splat"
-#  status = 302
-#  conditions = {Language = ["fr"]}
+[[redirects]]
+  from = "/*"
+  to = "/fr/:splat"
+  status = 302
+  conditions = {Language = ["fr"]}
 
 [[redirects]]
   from = "/*"
