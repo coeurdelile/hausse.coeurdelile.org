@@ -11,8 +11,8 @@ module.exports = {
               marginTop: "1.4em",
               marginBottom: 0,
             },
-            "h1,h2": {
-              fontFamily: "Barlow",
+            h1: {
+              fontFamily: "Barlow Black",
               fontStyle: "italic",
               textTransform: "uppercase",
             },

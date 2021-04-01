@@ -1,14 +1,19 @@
 {
   "siteName": "Cœur-de-l'Île Antigentrification",
-  "calc": "Use the Calculator",
-  "desktop": "It’s recommended to use this tool on a desktop computer; some of the government websites you’ll need to use to find the required numbers are not optimized for mobile devices.",
-  "rent-desc": "Your current monthly rent",
-  "rent-err": "Enter the amount of your monthly rent.",
-  "How is your heating paid?": "How is your heating paid?",
+  "goto-calc": "Use the Calculator!",
+  "desktop": "If you don't have municipal and school tax values on hand for the building you live in, we recommend you use this tool on a desktop computer. Some of the government websites you’ll need to use to find the required values are not optimized for mobile devices.",
+  "calc": "Rent Increase Estimate Calculator",
+  "err-amount": "Enter an amount.",
+  "section-dwelling": "Information about your dwelling",
+  "rent-label": "Your current monthly rent",
+  "rent-help": "Enter the amount of your monthly rent (before any increase proposed by the landlord).",
+  "heat-label": "How is your heating paid?",
+  "heat-help": "How you pay for heating impacts the estimate.",
   "I pay for heating myself": "I pay for heating myself",
-  "The landlord pays for electric heating": "The landlord pays for electric heating",
-  "The landlord pays for gas heating": "The landlord pays for gas heating",
-  "The landlord pays for oil heating": "The landlord pays for oil heating",
+  "My landlord pays for electric heating": "My landlord pays for electric heating",
+  "My landlord pays for gas heating": "My landlord pays for gas heating",
+  "My landlord pays for oil heating": "My landlord pays for oil heating",
+
   "Factor in municipal taxes for the building": "Factor in municipal taxes for the building",
   "How do I find this?": "How do I find this?"
 }
