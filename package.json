@@ -1,0 +1,66 @@
+{
+  "name": "hausse.coeurdelile.org",
+  "version": "2.0.0",
+  "private": true,
+  "homepage": "https://hausse.coeurdelile.org",
+  "repository": "coeurdelile/hausse.coeurdelile.org",
+  "twitter": "@coeurdelile",
+  "scripts": {
+    "start": "echo '\\033[0;31m=======\\nOpen http://localhost:3000/en to start!\\n=======' && next dev",
+    "export": "next build && next export",
+    "test": "run-s -l test:*",
+    "test:eslint": "eslint '{src,test}/**/*.{js,ts,tsx}'",
+    "test:prettier": "prettier '{src,test}/**/*.{css,js,ts,tsx}' -l",
+    "test:ts": "tsc --noEmit",
+    "test:stylelint": "stylelint 'src/**/*.{css,tsx}'",
+    "prettier": "prettier --write '{src,test}/**/*.{css,js,ts,tsx}'"
+  },
+  "dependencies": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-headroom": "^3.1.0",
+    "react-hook-form": "^6.15.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.3.2",
+    "@tailwindcss/typography": "^0.4.0",
+    "@types/node": "^14.14.34",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
+    "@types/react-headroom": "^2.2.1",
+    "astroturf": "^1.0.0-beta.17",
+    "eslint": "^7.20.0",
+    "eslint-config-lostfictions": "^1.1.0",
+    "front-matter": "^4.0.2",
+    "imagemin-optipng": "^8.0.0",
+    "next": "^10.0.8",
+    "next-compose-plugins": "^2.2.1",
+    "next-fonts": "^1.2.0",
+    "next-mdx-remote": "^2.1.3",
+    "next-optimized-images": "^2.6.2",
+    "npm-run-all": "^4.1.5",
+    "postcss-nested": "^4.2.3",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.2.1",
+    "remark": "^13.0.0",
+    "strip-markdown": "^4.0.0",
+    "stylelint": "^13.12.0",
+    "stylelint-config-lostfictions": "^0.11.0",
+    "tailwindcss": "^2.0.3",
+    "typescript": "^4.2.3",
+    "val-loader": "^2.1.2"
+  },
+  "browserslist": {
+    "production": [
+      "> 1%",
+      "last 2 versions",
+      "Firefox ESR",
+      "not dead",
+      "not IE 11"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version"
+    ]
+  }
+}

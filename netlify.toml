@@ -1,0 +1,17 @@
+[build]
+  publish = "out"
+  command = "yarn export"
+
+[[plugins]]
+  package = "netlify-plugin-cache-nextjs"
+
+# [[redirects]]
+#  from = "/*"
+#  to = "/fr/:splat"
+#  status = 302
+#  conditions = {Language = ["fr"]}
+
+[[redirects]]
+  from = "/*"
+  to = "/en/:splat"
+  status = 301
