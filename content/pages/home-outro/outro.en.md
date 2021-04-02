@@ -10,13 +10,9 @@ This tool is based on the [estimation sheet](https://comitelogementpetitepatrie.
 
 ### [You Have the Right to Refuse a Rent Increase](https://rclalq.qc.ca/outils/hausse-de-loyer)
 
-https://rclalq.qc.ca/outils/hausse-de-loyer
-
 A pamphlet authored by the RCLALQ about refusing a rent increase. Available in English, French, Spanish, Creole, and Arabic.
 
 ### [Calculation of the 2021 Rent Increase](https://www.tal.gouv.qc.ca/en/news/calculation-of-the-2021-rent-increase)
-
-https://www.tal.gouv.qc.ca/en/news/calculation-of-the-2021-rent-increase
 
 A post on the TAL site outlining this year's percentages used to calculate the rent increase.
 
@@ -24,8 +20,6 @@ A post on the TAL site outlining this year's percentages used to calculate the r
 ## Getting Help
 
 ### [Regroupement des comités logement et associations de locataires du Québec (RCLALQ)](https://rclalq.qc.ca/)
-
-https://rclalq.qc.ca/
 
 The RCLALQ is the Québec federation of housing committees (comités logement) and tenants’ associations (associations de locataires). These committees and associations should be your first port of call for helping negotiate rent increases, or in any kind of housing crisis or legal or extralegal conflict with your landlord. Check their [map](https://rclalq.qc.ca/comites-logement/) to find the one nearest you!
 

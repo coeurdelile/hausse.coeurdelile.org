@@ -11,13 +11,9 @@ Cet outil est basé sur la [fiche d'estimation](https://comitelogementpetitepatr
 
 ### [Vous pouvez refuser une hausse de loyer](https://rclalq.qc.ca/outils/hausse-de-loyer)
 
-https://rclalq.qc.ca/outils/hausse-de-loyer
-
 Un pamphlet rédigé par le RCLALQ sur le refus d'une hausse de loyer. Disponible en français, anglais, espagnol, créole et arabe.
 
 ### [Le calcul de l'augmentation des loyers en 2021](https://www.tal.gouv.qc.ca/fr/actualites/le-calcul-de-l-augmentation-des-loyers-en-2021)
-
-https://www.tal.gouv.qc.ca/fr/actualites/le-calcul-de-l-augmentation-des-loyers-en-2021
 
 Un message sur le site du TAL indiquant les pourcentages utilisés cette année pour calculer l'augmentation des loyers.
 
@@ -25,8 +21,6 @@ Un message sur le site du TAL indiquant les pourcentages utilisés cette année 
 ## Besoin d'aide ?
 
 ### [Regroupement des comités logement et associations de locataires du Québec (RCLALQ)](https://rclalq.qc.ca/)
-
-https://rclalq.qc.ca/
 
 Le RCLALQ est la fédération québécoise des comités logement et des associations de locataires. Ces comités et associations devraient être votre premier recours pour vous aider à négocier des augmentations de loyer, ou en cas de crise du logement ou de conflit juridique ou extralégal avec votre propriétaire. Consultez leur [carte](https://rclalq.qc.ca/comites-logement/) pour trouver l'association la plus proche de chez vous !
 

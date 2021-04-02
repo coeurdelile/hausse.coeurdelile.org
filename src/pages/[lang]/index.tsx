@@ -49,7 +49,7 @@ const Index = ({ intro, outro, title, description, image }: PageProps) => {
       />
 
       <a href="#calc">
-        <Button className="mx-auto mb-12 flex items-center h-10 px-5 py-6 text-xl text-white bg-indigo-700 hover:bg-indigo-800">
+        <Button className="mx-auto mb-12 flex items-center h-10 px-5 text-xl text-white bg-indigo-700 hover:bg-indigo-800">
           <svg
             className="w-6 h-6 mr-3 fill-current"
             width={24}
@@ -96,19 +96,19 @@ const Index = ({ intro, outro, title, description, image }: PageProps) => {
         <img className="mx-auto w-2/3 mb-8" src={logo} />
         <div className="flex flex-col items-center mb-12">
           <div className="mb-4 font-bold">
-            <a className="flex" href={twUrl}>
-              <img width={18} className="inline mr-2" src={twitter} />
+            <a className="flex items-center" href={twUrl}>
+              <img width={18} className="inline mr-2 max-h-6" src={twitter} />
               {siteInfo.twitter}
             </a>
           </div>
           <div className="mb-4 font-bold">
             <a
-              className="flex"
+              className="flex items-center"
               onMouseEnter={decodeEmail}
               onTouchStart={decodeEmail}
               onFocus={decodeEmail}
             >
-              <img width={18} className="inline mr-2" src={email} />
+              <img width={18} className="inline mr-2 max-h-6" src={email} />
               {address}
               <span>&#64;</span>
               {domain}
