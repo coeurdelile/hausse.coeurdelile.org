@@ -2,10 +2,10 @@ import React from "react";
 import { Control, FieldError, RegisterOptions } from "react-hook-form";
 
 import { HelpPopup } from "~/components/HelpPopup";
+import { NumberInput } from "~/components/NumberInput";
 import { useSiteData } from "~/lib/site-data";
 
-import { mwxxs } from "~/styles/headings";
-import { NumberInput } from "./NumberInput";
+import { mwxxs } from "~/styles/utils";
 
 export const NumberGroup = ({
   label,

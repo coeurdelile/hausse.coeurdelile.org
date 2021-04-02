@@ -4,6 +4,10 @@ export const headings = css`
   font-family: var(--font-headings);
 `;
 
+export const body = css`
+  font-family: var(--font-body);
+`;
+
 export const subheader = css`
   composes: text-2xl font-bold mb-5 from global;
 `;

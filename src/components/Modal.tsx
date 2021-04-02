@@ -6,7 +6,7 @@ import SwipeableViews from "react-swipeable-views";
 import { Button } from "~/components/Button";
 import { useSiteData } from "~/lib/site-data";
 
-import { headings } from "~/styles/headings";
+import { headings } from "~/styles/utils";
 
 Modal.setAppElement("#__next");
 

@@ -6,7 +6,7 @@ import { MuniModal, SchoolModal } from "~/components/Modal";
 import { NumberGroup, SelectGroup } from "~/components/InputGroup";
 
 import { useSiteData } from "~/lib/site-data";
-import { headings, subheader } from "~/styles/headings";
+import { headings, subheader, body } from "~/styles/utils";
 
 // const positive = (value: any) => parseInt(value, 10) > 0;
 // const lessThan10000 = (value: any) => parseInt(value, 10) < 10_000;

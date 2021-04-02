@@ -5,7 +5,7 @@ import { Button } from "~/components/Button";
 import { Calculator } from "~/components/Calculator";
 import { useSiteData } from "~/lib/site-data";
 
-import { headings } from "~/styles/headings";
+import { headings } from "~/styles/utils";
 
 import logo from "~/images/logo.svg";
 import twitter from "~/images/twitter.svg";
