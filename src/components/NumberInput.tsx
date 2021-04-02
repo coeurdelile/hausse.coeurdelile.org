@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect, useEffect } from "react";
 import {
   Control,
   Controller,
@@ -7,9 +7,12 @@ import {
 } from "react-hook-form";
 import { useSiteData } from "~/lib/site-data";
 
+const useIsomorphicLayoutEffect =
+  typeof window !== "undefined" ? useLayoutEffect : useEffect;
+
 function useRunAfterUpdate() {
   const afterPaintRef = React.useRef<(() => void) | null>(null);
-  React.useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     if (afterPaintRef.current) {
       afterPaintRef.current();
       afterPaintRef.current = null;
