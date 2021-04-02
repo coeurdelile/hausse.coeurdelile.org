@@ -9,7 +9,7 @@ module.exports = withPlugins(
       webpack(cfg) {
         // enable astroturf
         cfg.module.rules.push({
-          test: /\.tsx$/,
+          test: /\.tsx?$/,
           use: [{ loader: "astroturf/loader" }],
         });
 
