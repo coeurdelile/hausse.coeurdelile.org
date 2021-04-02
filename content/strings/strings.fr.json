@@ -8,6 +8,10 @@
   "err-amount": "Entrer un montant valide.",
   "err-sel": "Faire une sélection valide.",
 
+  "back": "Précédent",
+  "next": "Suivant",
+  "done": "Terminé",
+
   "section-dwelling": "Informations sur votre logement",
   "rent-label": "Quel est votre loyer mensuel actuel ?",
   "rent-help": "Indiquez le montant de votre loyer mensuel (avant toute augmentation proposée par le propriétaire).",
@@ -25,9 +29,29 @@
   "muni2021-label": "Taxe municipale pour l’année 2021",
   "muni2020-label": "Taxe municipale pour l’année 2020",
 
+  "ref-title": "Trouver votre taxe municipale",
+  "ref1-1": "Pour connaître la modification de la taxe municipale pour votre immeuble, rendez-vous sur le site du ",
+  "ref1-2": "Rôle d'évaluation foncière",
+  "ref1-3": " de Montréal. Choisissez “Addresse” et ensuite “Continuer.”",
+  "ref2": "Remplissez les détails sur la page suivante.",
+  "ref3": "Copiez le numéro de matricule (ou notez-le) et mettez-le de côté. Vous pourrez l'utiliser pour trouver votre taxe scolaire après avoir trouvé votre taxe municipale.",
+  "ref4": "Allez maintenant au bas de la page et cliquez sur “Compte de taxes” pour 2021 et 2020. Ces documents s'ouvriront en format PDF.",
+  "ref5": "Seul le chiffre intitulé “total du compte”, en bas à droite du tableau de la première page, nous intéresse. Une fois que vous l'avez trouvé dans les deux PDF, cliquez sur “Terminé” ci-dessous et entrez ces chiffres dans les champs de notre outil.",
+
   "section-school": "Taxes scolaires pour le bâtiment",
   "school2021-label": "Taxe scolaire pour l’année 2020-2021",
   "school2020-label": "Taxe scolaire pour l’année 2019-2020",
+
+  "tfp-title": "Trouver votre taxe scolaire",
+  "tfp1-1": "Pour connaître la modification de la taxe scolaire de l'immeuble, rendez-vous sur le ",
+  "tfp1-2": "site TFP du Comité de gestion de la taxe scolaire",
+  "tfp1-3": ". Cliquez sur “Visiteur”.",
+  "tfp2": "Sélectionnez “Image des factures”.",
+  "tfp3": "Click “Matricule abrégé” dans la colonne de gauche.",
+  "tfp4-1": "Vous aurez besoin du numéro de matricule que vous avez obtenu lors de la recherche de votre taxe municipale. (Si vous ne l'avez pas, cliquez sur le bouton d'aide de la section «Taxes municipales» pour savoir comment le trouver). Collez-le dans le champ, puis supprimez tous les traits d'union et les espaces. (Cette étape est importante ! La page vous donnera une erreur si vous ne les supprimez pas.) Cliquez ensuite sur “Rechercher”.",
+  "tfp4-2": "Vous pouvez également essayer de rechercher les informations par adresse, mais d'après notre expérience, la recherche d'adresse sur le site Web est très sujette aux erreurs. Nous recommandons la méthode ci-dessus.",
+  "tfp5": "Il devrait y avoir un tableau avec une seule entrée sur la page suivante. Cliquez sur le lien sous l'en-tête intitulé “Matricule”.",
+  "tfp6": "La page suivante devrait être un tableau avec les montants des impôts. Copiez les chiffres des deux premières lignes (qui devraient être intitulés “2020-2021” et “2019-2020”). Cliquez ensuite sur “Terminé” et entrez ces chiffres dans les champs de notre outil.",
 
   "section-work": "Améliorations majeures, réparations ou autres travaux",
   "workbuilding-label": "Montant dépensé pour les travaux majeurs sur l'immeuble",
