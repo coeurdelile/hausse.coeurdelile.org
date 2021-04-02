@@ -125,7 +125,7 @@ const HelpDialog = ({
         key={i}
         data-slide={i}
         onClick={goToSlide}
-        className={`cursor-pointer border border-indigo-700 rounded-full w-2 h-2 mx-1 ${
+        className={`cursor-pointer border border-indigo-700 rounded-full w-2 h-2 mx-px sm:mx-1 ${
           slide === i ? "bg-indigo-700" : ""
         }`}
       />
@@ -135,13 +135,13 @@ const HelpDialog = ({
   return (
     <div className="flex flex-col h-full">
       <div
-        className={`${headings} text-2xl uppercase font-bold italic px-4 mt-4 mb-4`}
+        className={`${headings} text-2xl uppercase font-bold italic px-2 sm:px-4 mt-2 sm:mt-4 mb-4`}
       >
         {title}
       </div>
       <SwipeableViews
         className="h-full mb-4"
-        slideClassName="flex flex-col justify-center"
+        slideClassName="flex flex-col sm:justify-center"
         index={slide}
         onChangeIndex={(i) => {
           setSlide(i);
@@ -154,7 +154,7 @@ const HelpDialog = ({
           </div>
         ))}
       </SwipeableViews>
-      <div className="w-full mt-auto px-4 mb-4 flex justify-between items-center">
+      <div className="w-full mt-auto px-2 sm:px-4 mb-2 sm:mb-4 flex justify-between items-center">
         <Button
           onClick={() => {
             if (slide > 0) setSlide(slide - 1);
