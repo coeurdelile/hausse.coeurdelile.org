@@ -138,7 +138,7 @@ export const Calculator = () => {
             <span>{t("help-find")}</span>
           </Button>
           <InfoModal active={activeModal === "school"} closeModal={closeModal}>
-            school
+            <SchoolModal closeModal={closeModal} />
           </InfoModal>
           <NumberGroup
             name="school2021"
@@ -211,16 +211,80 @@ export const Calculator = () => {
 };
 
 const MuniModal = ({ closeModal }: { closeModal: () => void }) => {
-  const { lang } = useSiteData();
+  const { t, lang } = useSiteData();
+
+  const slides: [string, string | JSX.Element][] = [
+    [
+      "/images/ref1.png",
+      <span key="ref1txt">
+        {t("ref1-1")}{" "}
+        <a
+          className="underline"
+          href="https://servicesenligne2.ville.montreal.qc.ca/sel/evalweb/"
+        >
+          {t("ref1-2")}
+        </a>{" "}
+        {t("ref1-3")}
+      </span>,
+    ],
+    [lang === "en" ? "/images/ref2-en.png" : "/images/ref2-fr.png", t("ref2")],
+    ["/images/ref3.png", t("ref3")],
+    ["/images/ref4.png", t("ref4")],
+    ["/images/ref5.png", t("ref5")],
+  ];
+
+  return (
+    <HelpModal title={t("ref-title")} slides={slides} closeModal={closeModal} />
+  );
+};
+
+const SchoolModal = ({ closeModal }: { closeModal: () => void }) => {
+  const { t, lang } = useSiteData();
+
+  const slides: [string, string | JSX.Element][] = [
+    [
+      "/images/ref1.png",
+      <span key="ref1txt">
+        {t("ref1-1")}{" "}
+        <a
+          className="underline"
+          href="https://servicesenligne2.ville.montreal.qc.ca/sel/evalweb/"
+        >
+          {t("ref1-2")}
+        </a>{" "}
+        {t("ref1-3")}
+      </span>,
+    ],
+    [lang === "en" ? "/images/ref2-en.png" : "/images/ref2-fr.png", t("ref2")],
+    ["/images/ref3.png", t("ref3")],
+    ["/images/ref4.png", t("ref4")],
+    ["/images/ref5.png", t("ref5")],
+  ];
+
+  return (
+    <HelpModal title={t("ref-title")} slides={slides} closeModal={closeModal} />
+  );
+};
+
+const HelpModal = ({
+  title,
+  slides,
+  closeModal,
+}: {
+  title: string;
+  slides: [string, string | JSX.Element][];
+  closeModal: () => void;
+}) => {
+  const { t } = useSiteData();
   const [slide, setSlide] = useState(0);
   const goToSlide = useCallback((e: React.MouseEvent) => {
     setSlide(parseInt(e.currentTarget.getAttribute("data-slide")!));
   }, []);
 
-  const SLIDE_COUNT = 5;
+  const notLastSlide = slide < slides.length - 1;
 
   const dots = [];
-  for (let i = 0; i < SLIDE_COUNT; i++) {
+  for (let i = 0; i < slides.length; i++) {
     dots.push(
       <div
         key={i}
@@ -238,7 +302,7 @@ const MuniModal = ({ closeModal }: { closeModal: () => void }) => {
       <div
         className={`${headings} text-2xl uppercase font-bold italic px-4 mt-4 mb-4`}
       >
-        Finding your municipal tax
+        {title}
       </div>
       <SwipeableViews
         className="h-full mb-4"
@@ -247,68 +311,13 @@ const MuniModal = ({ closeModal }: { closeModal: () => void }) => {
         onChangeIndex={(i) => {
           setSlide(i);
         }}
-        enableMouseEvents
       >
-        <div>
-          <img
-            className="border border-black mx-auto mb-4"
-            src="/images/ref1.png"
-          />
-          <div className="mb-1 px-2 mx-auto max-w-xl">
-            To find the change in municipal tax for your building, go to the
-            Montréal{" "}
-            <a
-              className="underline"
-              href="https://servicesenligne2.ville.montreal.qc.ca/sel/evalweb/"
-            >
-              Rôle d'évaluation foncière
-            </a>{" "}
-            (property assessment roll) site. Pick "Addresse" and then
-            "Continuer."
+        {slides.map(([image, text], i) => (
+          <div key={i}>
+            <img className="border border-black mx-auto mb-4" src={image} />
+            <div className="mb-1 px-2 mx-auto max-w-xl">{text}</div>
           </div>
-        </div>
-        <div>
-          <img
-            className="border border-black mx-auto mb-4"
-            src={lang === "en" ? "/images/ref2-en.png" : "/images/ref2-fr.png"}
-          />
-          <div className="mb-1 px-2 mx-auto max-w-xl">
-            Fill in the details on the next page. We've translated the fields in
-            the screenshot above to make things easier.
-          </div>
-        </div>
-        <div>
-          <img
-            className="border border-black mx-auto mb-4"
-            src="/images/ref3.png"
-          />
-          <div className="mb-1 px-2 mx-auto max-w-xl">
-            Copy the "numéro de matricule" (or write it down) and put it to the
-            side. You'll use it to find your school tax in a moment.
-          </div>
-        </div>
-        <div>
-          <img
-            className="border border-black mx-auto mb-4"
-            src="/images/ref4.png"
-          />
-          <div className="mb-1 px-2 mx-auto max-w-xl">
-            Now go to the bottom of the page and click on "compte de taxes" for
-            both 2021 and 2020. These will open PDF documents.
-          </div>
-        </div>
-        <div>
-          <img
-            className="border border-black mx-auto mb-4"
-            src="/images/ref5.png"
-          />
-          <div className="mb-1 px-2 mx-auto max-w-xl">
-            We only care about the number labelled “total du compte” in the
-            bottom right of the table on the first page. Once you've found it in
-            both PDFs, click "done" below and enter those numbers in the fields
-            on our calculator.
-          </div>
-        </div>
+        ))}
       </SwipeableViews>
       <div className="w-full mt-auto px-4 mb-4 flex justify-between items-center">
         <Button
@@ -325,22 +334,22 @@ const MuniModal = ({ closeModal }: { closeModal: () => void }) => {
           <svg viewBox="0 0 24 24" width="24px" fill="currentColor">
             <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z" />
           </svg>
-          <span>Back</span>
+          <span>{t("back")}</span>
         </Button>
         <div className="flex">{dots}</div>
         <Button
           onClick={() => {
-            if (slide < SLIDE_COUNT - 1) setSlide(slide + 1);
+            if (notLastSlide) setSlide(slide + 1);
             else closeModal();
           }}
           className={`text-lg flex items-center h-8 pl-3 pr-1 text-white ${
-            slide < SLIDE_COUNT - 1
+            notLastSlide
               ? "pr-1 bg-indigo-700 hover:bg-indigo-800"
               : "pr-3 bg-green-700 hover:bg-green-800"
           }`}
         >
-          <span>{slide < SLIDE_COUNT - 1 ? "Next" : "Done"}</span>
-          {slide < SLIDE_COUNT - 1 && (
+          <span>{notLastSlide ? t("next") : t("done")}</span>
+          {notLastSlide && (
             <svg viewBox="0 0 24 24" width="24px" fill="currentColor">
               <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z" />
             </svg>
