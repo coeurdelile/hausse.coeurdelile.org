@@ -26,6 +26,8 @@ export const MuniModal = ({
         {t("ref1-1")}
         <a
           className="underline"
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://servicesenligne2.ville.montreal.qc.ca/sel/evalweb/"
         >
           {t("ref1-2")}
@@ -64,7 +66,12 @@ export const SchoolModal = ({
       "/images/tfp1.png",
       <span key="tfp1txt">
         {t("tfp1-1")}
-        <a className="underline" href="https://tfp.cgtsim.qc.ca/asp/tfp.aspx">
+        <a
+          className="underline"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://tfp.cgtsim.qc.ca/asp/tfp.aspx"
+        >
           {t("tfp1-2")}
         </a>
         {t("tfp1-3")}
