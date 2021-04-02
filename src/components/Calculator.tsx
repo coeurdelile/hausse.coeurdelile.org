@@ -216,14 +216,14 @@ const MuniModal = ({ closeModal }: { closeModal: () => void }) => {
   const slides: [string, string | JSX.Element][] = [
     [
       "/images/ref1.png",
-      <span key="ref1txt">
-        {t("ref1-1")}{" "}
+      <span key="ref1">
+        {t("ref1-1")}
         <a
           className="underline"
           href="https://servicesenligne2.ville.montreal.qc.ca/sel/evalweb/"
         >
           {t("ref1-2")}
-        </a>{" "}
+        </a>
         {t("ref1-3")}
       </span>,
     ],
@@ -239,30 +239,34 @@ const MuniModal = ({ closeModal }: { closeModal: () => void }) => {
 };
 
 const SchoolModal = ({ closeModal }: { closeModal: () => void }) => {
-  const { t, lang } = useSiteData();
+  const { t } = useSiteData();
 
   const slides: [string, string | JSX.Element][] = [
     [
-      "/images/ref1.png",
-      <span key="ref1txt">
-        {t("ref1-1")}{" "}
-        <a
-          className="underline"
-          href="https://servicesenligne2.ville.montreal.qc.ca/sel/evalweb/"
-        >
-          {t("ref1-2")}
-        </a>{" "}
-        {t("ref1-3")}
+      "/images/tfp1.png",
+      <span key="tfp1txt">
+        {t("tfp1-1")}
+        <a className="underline" href="https://tfp.cgtsim.qc.ca/asp/tfp.aspx">
+          {t("tfp1-2")}
+        </a>
+        {t("tfp1-3")}
       </span>,
     ],
-    [lang === "en" ? "/images/ref2-en.png" : "/images/ref2-fr.png", t("ref2")],
-    ["/images/ref3.png", t("ref3")],
-    ["/images/ref4.png", t("ref4")],
-    ["/images/ref5.png", t("ref5")],
+    ["/images/tfp2.png", t("tfp2")],
+    ["/images/tfp3.png", t("tfp3")],
+    [
+      "/images/tfp4.png",
+      <div key="tpf4">
+        <p>{t("tfp4-1")}</p>
+        <p className="mt-2 text-gray-800 italic">{t("tfp4-2")}</p>
+      </div>,
+    ],
+    ["/images/tfp5.png", t("tfp5")],
+    ["/images/tfp6.png", t("tfp6")],
   ];
 
   return (
-    <HelpModal title={t("ref-title")} slides={slides} closeModal={closeModal} />
+    <HelpModal title={t("tfp-title")} slides={slides} closeModal={closeModal} />
   );
 };
 
