@@ -50,7 +50,12 @@ const Index = ({ intro, outro, title, description, image }: PageProps) => {
 
       <a href="#calc">
         <Button className="mx-auto mb-12 flex items-center h-10 px-5 py-6 text-xl text-white bg-indigo-700 hover:bg-indigo-800">
-          <svg className="w-6 h-6 mr-3 fill-current" viewBox="4 4 16 16">
+          <svg
+            className="w-6 h-6 mr-3 fill-current"
+            width={24}
+            height={24}
+            viewBox="4 4 16 16"
+          >
             <rect height="1.5" width="5" x="6.25" y="7.72" />
             <rect height="1.5" width="5" x="13" y="15.75" />
             <rect height="1.5" width="5" x="13" y="13.25" />
