@@ -4,7 +4,7 @@
   "goto-calc": "Accéder à l'outil d'estimation",
   "desktop": "Si vous n'avez pas sous la main les valeurs des taxes municipales et scolaires pour l'immeuble où vous habitez, nous vous recommandons d'utiliser cet outil sur un ordinateur. Certains des sites Web gouvernementaux que vous devrez utiliser pour trouver les valeurs requises ne sont pas optimisés pour les appareils mobiles.",
   "calc": "Outil d'estimation d'hausse de loyer",
-  "help-find": "Comment trouver ces montants ?",
+  "help-find": "Comment trouver ces montants?",
   "err-amount": "Entrer un montant valide.",
   "err-sel": "Faire une sélection valide.",
 
@@ -14,12 +14,12 @@
   "done": "Terminé",
 
   "section-dwelling": "Informations sur votre logement",
-  "rent-label": "Quel est votre loyer mensuel actuel ?",
+  "rent-label": "Quel est votre loyer mensuel actuel?",
   "rent-help": "Indiquez le montant de votre loyer mensuel (avant toute augmentation proposée par le propriétaire).",
-  "dwellings-label": "Combien de logements se trouvent dans votre bâtiment ?",
-  "dwellings-help": "Combien de logements distincts (loués ou non) y a-t-il dans votre immeuble ? Par exemple, un triplex où aucun étage n'est subdivisé compterait typiquement 3 logements.",
+  "dwellings-label": "Combien de logements se trouvent dans votre bâtiment?",
+  "dwellings-help": "Combien de logements distincts (loués ou non) y a-t-il dans votre immeuble? Par exemple, un triplex où aucun étage n'est subdivisé compterait typiquement 3 logements.",
 
-  "heat-label": "Comment votre chauffage est-il payé ?",
+  "heat-label": "Comment votre chauffage est-il payé?",
   "heat-help": "L'outil d'estimation d'augmentation «raisonnable» de la TAL tient compte de si c’est votre propriétaire ou vous-même qui paie le chauffage de votre logement. Si c'est le propriétaire qui paie, les différents modes de chauffage sont associés a des pourcentages différents.",
   "I pay for heating myself": "Je paie moi-même le chauffage",
   "My landlord pays for electric heating": "Mon propriétaire paie le chauffage électrique",
@@ -49,17 +49,17 @@
   "tfp1-3": ". Cliquez sur “Visiteur”.",
   "tfp2": "Sélectionnez “Image des factures”.",
   "tfp3": "Click “Matricule abrégé” dans la colonne de gauche.",
-  "tfp4-1": "Vous aurez besoin du numéro de matricule que vous avez obtenu lors de la recherche de votre taxe municipale. (Si vous ne l'avez pas, cliquez sur le bouton d'aide de la section «Taxes municipales» dans notre outil pour savoir comment le trouver.) Collez-le dans le champ, puis supprimez tous les traits d'union et les espaces. (Cette étape est importante ! La page vous donnera une erreur si vous ne les supprimez pas.) Cliquez ensuite sur “Rechercher”.",
+  "tfp4-1": "Vous aurez besoin du numéro de matricule que vous avez obtenu lors de la recherche de votre taxe municipale. (Si vous ne l'avez pas, cliquez sur le bouton d'aide de la section «Taxes municipales» dans notre outil pour savoir comment le trouver.) Collez-le dans le champ, puis supprimez tous les traits d'union et les espaces. (Cette étape est importante! La page vous donnera une erreur si vous ne les supprimez pas.) Cliquez ensuite sur “Rechercher”.",
   "tfp4-2": "Vous pouvez également essayer de rechercher les informations par adresse, mais d'après notre expérience, la recherche d'adresse sur le site Web est très sujette aux erreurs. Nous recommandons la méthode ci-dessus.",
   "tfp5": "Il devrait y avoir un tableau avec une seule entrée sur la page suivante. Cliquez sur le lien sous l'en-tête intitulé “Matricule”.",
   "tfp6": "La page suivante devrait être un tableau avec les montants des impôts. Copiez les chiffres des deux premières lignes (qui devraient être intitulés “2020-2021” et “2019-2020”). Cliquez ensuite sur “Terminé” et entrez ces chiffres dans les champs de notre outil.",
 
   "section-work": "Améliorations majeures, réparations ou autres travaux",
-  "workbuilding-label": "Montant dépensé pour les travaux majeurs sur l'immeuble",
-  "workbuilding-help": "Combien votre propriétaire a-t-il dépensé pour des travaux majeurs (y compris des améliorations ou des réparations importantes) pour l'ensemble du bâtiment, le cas échéant ?",
-  "workdwelling-label": "Montant dépensé pour des travaux majeurs pour votre logement spécifiquement",
-  "workdwelling-help": "Combien votre propriétaire a-t-il dépensé pour des travaux importants (y compris des améliorations ou des réparations majeures) pour votre logement en particulier, le cas échéant ?",
+  "workbuilding-label": "Montant dépensé pour les travaux sur l'immeuble",
+  "workbuilding-help": "Combien votre propriétaire a-t-il dépensé pour des travaux majeurs (y compris des améliorations ou des réparations importantes) pour l'ensemble du bâtiment, le cas échéant?",
+  "workdwelling-label": "Montant dépensé pour les travaux sur votre logement",
+  "workdwelling-help": "Combien votre propriétaire a-t-il dépensé pour des travaux majeurs (y compris des améliorations ou des réparations importantes) pour votre logement en particulier, le cas échéant?",
 
   "estimate": "Estimation d’une hausse de loyer raisonnable",
-  "needfinish": "Remplissez tous les champs obligatoires ci-dessus pour voir votre estimation ici !"
+  "needfinish": "Remplissez tous les champs obligatoires ci-dessus pour voir votre estimation ici!"
 }
