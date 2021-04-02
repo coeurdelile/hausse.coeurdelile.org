@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Button: React.FC<
-  React.DetailsHTMLAttributes<HTMLButtonElement>
+  React.ButtonHTMLAttributes<HTMLButtonElement>
 > = ({ className = "", children, ...props }) => {
   return (
     <button

@@ -5,6 +5,8 @@
 @import url("./fontface.css");
 @import url("./vars.css");
 
+@import url("./modal.css");
+
 html {
   font-size: 18px;
   scroll-behavior: smooth;

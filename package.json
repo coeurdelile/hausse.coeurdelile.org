@@ -19,7 +19,9 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-headroom": "^3.1.0",
-    "react-hook-form": "^6.15.5"
+    "react-hook-form": "^6.15.5",
+    "react-modal": "^3.12.1",
+    "react-swipeable-views": "^0.13.9"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.3.2",
@@ -28,6 +30,8 @@
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",
     "@types/react-headroom": "^2.2.1",
+    "@types/react-modal": "^3.12.0",
+    "@types/react-swipeable-views": "^0.13.0",
     "astroturf": "^1.0.0-beta.17",
     "eslint": "^7.20.0",
     "eslint-config-lostfictions": "^1.1.0",

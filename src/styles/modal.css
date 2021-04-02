@@ -1,0 +1,25 @@
+:root {
+  --overlay-transition: 300ms;
+}
+
+.ReactModal__Content {
+  @apply max-w-3xl;
+  margin: auto;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity var(--overlay-transition) ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
