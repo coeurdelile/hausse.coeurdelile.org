@@ -1,7 +1,10 @@
 import React from "react";
 import { usePopperTooltip } from "react-popper-tooltip";
 
-export const HelpPopup: React.FC = ({ children }) => {
+export const HelpPopup: React.FC<{
+  className?: string;
+  popupClassName?: string;
+}> = ({ className, popupClassName, children }) => {
   const {
     getArrowProps,
     getTooltipProps,
@@ -15,7 +18,9 @@ export const HelpPopup: React.FC = ({ children }) => {
   return (
     <>
       <button
-        className="ml-4 transition-colors text-indigo-700 hover:text-indigo-800 focus:text-indigo-900 focus:outline-none"
+        className={`ml-4 transition-colors text-indigo-700 hover:text-indigo-800 focus:text-indigo-900 focus:outline-none ${
+          className || ""
+        }`}
         type="button"
         ref={setTriggerRef}
       >
@@ -32,7 +37,7 @@ export const HelpPopup: React.FC = ({ children }) => {
         <div
           ref={setTooltipRef}
           {...getTooltipProps({
-            className: "tooltip-container max-w-md p-3",
+            className: `tooltip-container max-w-md p-3 ${popupClassName || ""}`,
           })}
         >
           <div {...getArrowProps({ className: "tooltip-arrow" })} />
