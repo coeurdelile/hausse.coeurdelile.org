@@ -49,7 +49,7 @@ const Index = ({ intro, outro, title, description, image }: PageProps) => {
       />
 
       <a href="#calc">
-        <Button className="mx-auto mb-12 flex items-center h-10 px-5 text-xl text-white bg-indigo-700 hover:bg-indigo-800">
+        <Button className="mx-auto mb-12 flex items-center px-5 py-2 text-xl text-white bg-indigo-700 hover:bg-indigo-800">
           <svg
             className="w-6 h-6 mr-3 fill-current"
             width={24}

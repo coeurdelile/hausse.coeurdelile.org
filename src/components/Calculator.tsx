@@ -6,7 +6,7 @@ import { MuniModal, SchoolModal } from "~/components/Modal";
 import { NumberGroup, SelectGroup } from "~/components/InputGroup";
 
 import { useSiteData } from "~/lib/site-data";
-import { headings, subheader, body } from "~/styles/utils";
+import { headings, subheader } from "~/styles/utils";
 
 // const positive = (value: any) => parseInt(value, 10) > 0;
 // const lessThan10000 = (value: any) => parseInt(value, 10) < 10_000;
@@ -103,7 +103,7 @@ export const Calculator = () => {
         <Section title={t("section-municipal")}>
           <Button
             onClick={() => setActiveModal("muni")}
-            className="mb-4 flex items-center h-10 px-5 text-white bg-indigo-700 hover:bg-indigo-800"
+            className="mb-4 flex items-center px-5 py-2 text-white bg-indigo-700 hover:bg-indigo-800"
           >
             <div className={`${headings} select-none text-xl mr-2`}>?</div>
             <span>{t("help-find")}</span>
@@ -136,7 +136,7 @@ export const Calculator = () => {
         <Section title={t("section-school")}>
           <Button
             onClick={() => setActiveModal("school")}
-            className="mb-4 flex items-center h-10 px-5 text-white bg-indigo-700 hover:bg-indigo-800"
+            className="mb-4 flex items-center px-5 py-2 text-white bg-indigo-700 hover:bg-indigo-800"
           >
             <div className={`${headings} select-none text-xl mr-2`}>?</div>
             <span>{t("help-find")}</span>
