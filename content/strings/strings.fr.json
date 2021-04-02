@@ -8,6 +8,7 @@
   "err-amount": "Entrer un montant valide.",
   "err-sel": "Faire une sélection valide.",
 
+  "required": "Champ obligatoire",
   "back": "Précédent",
   "next": "Suivant",
   "done": "Terminé",

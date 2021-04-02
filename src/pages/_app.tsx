@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 // import StickyHeader from "~/components/StickyHeader";
 
 import "~/styles/index.css";
+import "~/styles/react-popper-tooltip.css";
 
 import type { AppProps } from "next/app";
 

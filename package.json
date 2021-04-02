@@ -21,6 +21,7 @@
     "react-headroom": "^3.1.0",
     "react-hook-form": "^6.15.5",
     "react-modal": "^3.12.1",
+    "react-popper-tooltip": "^4.2.0",
     "react-swipeable-views": "^0.13.9"
   },
   "devDependencies": {

@@ -8,6 +8,7 @@
   "err-amount": "Enter a valid amount.",
   "err-sel": "Make a valid selection.",
 
+  "required": "Required field",
   "back": "Back",
   "next": "Next",
   "done": "Done",
