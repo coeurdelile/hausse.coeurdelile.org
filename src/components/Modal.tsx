@@ -195,20 +195,16 @@ const HelpDialog = ({
   );
 };
 
-const modalContent = css`
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  right: 40px;
-  bottom: 40px;
-  border: 1px solid #ccc;
-  background: #fff;
-  overflow: auto;
+// https://tailwindcss.com/docs/upgrading-to-v2#the-scrolling-touch-and-scrolling-auto-utilities-have-been-removed
+const scrollingTouch = css`
   --webkit-overflow-scrolling: touch;
-  outline: none;
-  /* border-radius: 4px; */
-  /* padding: 20px; */
 `;
+
+// removed modal default styles:
+// border-radius: 4px;
+// padding: 20px;
+
+const modalContent = `${scrollingTouch} max-w-3xl outline-none border border-gray-300 bg-white overflow-auto m-auto absolute inset-2 sm:inset-10`;
 
 export const BaseModal: React.FC<{
   active: boolean;
