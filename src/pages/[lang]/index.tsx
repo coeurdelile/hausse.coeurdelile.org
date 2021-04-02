@@ -50,12 +50,12 @@ const Index = ({ intro, outro, title, description, image }: PageProps) => {
 
       <a href="#calc">
         <Button className="mx-auto mb-12 flex items-center h-10 px-5 py-6 text-xl text-white bg-indigo-700 hover:bg-indigo-800">
-          <svg className="w-4 h-4 mr-3 fill-current" viewBox="0 0 20 20">
-            <path
-              d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-              clipRule="evenodd"
-              fillRule="evenodd"
-            ></path>
+          <svg className="w-6 h-6 mr-3 fill-current" viewBox="4 4 16 16">
+            <rect height="1.5" width="5" x="6.25" y="7.72" />
+            <rect height="1.5" width="5" x="13" y="15.75" />
+            <rect height="1.5" width="5" x="13" y="13.25" />
+            <polygon points="8,18 9.5,18 9.5,16 11.5,16 11.5,14.5 9.5,14.5 9.5,12.5 8,12.5 8,14.5 6,14.5 6,16 8,16" />
+            <polygon points="14.09,10.95 15.5,9.54 16.91,10.95 17.97,9.89 16.56,8.47 17.97,7.06 16.91,6 15.5,7.41 14.09,6 13.03,7.06 14.44,8.47 13.03,9.89" />
           </svg>
           <span>{t("goto-calc")}</span>
         </Button>

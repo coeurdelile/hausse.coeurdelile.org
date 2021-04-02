@@ -48,7 +48,7 @@
   "tfp1-3": ". Click “Visiteur.”",
   "tfp2": "Click “Image des factures.”",
   "tfp3": "Click “Matricule abrégé” in the left column.",
-  "tfp4-1": "You’ll need the “numéro de matricule” you obtained when looking up your municipal tax. (If you don't have it, click the help button for the municipal tax section to learn how to find it.) Paste it into the field, and then remove all hyphens and spaces. (This step is important! The page will give you an error if you don’t remove them.) Then click “Rechercher.”",
+  "tfp4-1": "You’ll need the “numéro de matricule” you obtained when looking up your municipal tax. (If you don't have it, click the help button for the municipal tax section in our calculator to learn how to find it.) Paste it into the field, and then remove all hyphens and spaces. (This step is important! The page will give you an error if you don’t remove them.) Then click “Rechercher.”",
   "tfp4-2": "You can also attempt to look up the info by address, but in our experience the website's address lookup is very error-prone. We recommend the above method.",
   "tfp5": "There should be a table with only one entry on the following page. Click the link under the header labelled “Matricule.”",
   "tfp6": "The following page should be a table with tax amounts. Copy the numbers for the top two rows (which should be labelled “2020-2021” and “2019-2020”). Now click “Done” and enter those numbers in the fields on our calculator.",

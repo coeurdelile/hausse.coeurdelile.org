@@ -25,6 +25,7 @@ module.exports = withPlugins(
     optimizedImages,
   ],
   {
-    reactStrictMode: true,
+    // react-swipeable-views uses legacy context (amongst other problems it has).
+    // reactStrictMode: true,
   }
 );
