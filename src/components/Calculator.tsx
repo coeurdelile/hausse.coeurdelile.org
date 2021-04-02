@@ -29,7 +29,7 @@ interface FormVals {
 }
 
 export const Calculator = () => {
-  const { register, errors, watch } = useForm<FormVals>({
+  const { control, register, errors, watch } = useForm<FormVals>({
     mode: "onTouched",
   });
 
@@ -44,33 +44,38 @@ export const Calculator = () => {
 
   const estimate = getEstimate(res);
 
+  const currencyPlaceholder = lang === "en" ? "0.00" : "0,00";
+
   return (
     <>
       <div className="max-w-2xl px-4 mx-auto mb-8">
         <Section title={t("section-dwelling")}>
           <NumberGroup
             name="rent"
-            placeholder="0.00"
+            placeholder={currencyPlaceholder}
             prefix="$"
             required
             label={t("rent-label")}
             help={t("rent-help")}
             errors={errors.rent}
             errorText={t("err-amount")}
-            ref={register({
+            control={control}
+            rules={{
               required: true,
               min: 1,
-            })}
+            }}
           />
           <NumberGroup
             name="dwellings"
-            // placeholder="5"
+            placeholder="0"
             required
+            integer
             label={t("dwellings-label")}
             help={t("dwellings-help")}
             errors={errors.dwellings}
             errorText={t("err-amount")}
-            ref={register({
+            control={control}
+            rules={{
               required: true,
               pattern: /\d{1,4}/,
               min: 1,
@@ -78,7 +83,7 @@ export const Calculator = () => {
               validate: {
                 wholeNumber,
               },
-            })}
+            }}
           />
           <SelectGroup
             name="heat"
@@ -107,23 +112,25 @@ export const Calculator = () => {
 
           <NumberGroup
             name="muni2021"
-            placeholder="0.00"
+            placeholder={currencyPlaceholder}
             prefix="$"
             required
             label={t("muni2021-label")}
             errors={errors.muni2021}
             errorText={t("err-amount")}
-            ref={register({ required: true })}
+            control={control}
+            rules={{ required: true, min: 0 }}
           />
           <NumberGroup
             name="muni2020"
-            placeholder="0.00"
+            placeholder={currencyPlaceholder}
             prefix="$"
             required
             label={t("muni2020-label")}
             errors={errors.muni2020}
             errorText={t("err-amount")}
-            ref={register({ required: true })}
+            control={control}
+            rules={{ required: true, min: 0 }}
           />
         </Section>
         <Section title={t("section-school")}>
@@ -141,45 +148,47 @@ export const Calculator = () => {
 
           <NumberGroup
             name="school2021"
-            placeholder="0.00"
+            placeholder={currencyPlaceholder}
             prefix="$"
             required
             label={t("school2021-label")}
             errors={errors.school2021}
             errorText={t("err-amount")}
-            ref={register({ required: true })}
+            control={control}
+            rules={{ required: true, min: 0 }}
           />
           <NumberGroup
             name="school2020"
-            placeholder="0.00"
+            placeholder={currencyPlaceholder}
             prefix="$"
             required
             label={t("school2020-label")}
             errors={errors.school2020}
             errorText={t("err-amount")}
-            ref={register({ required: true })}
+            control={control}
+            rules={{ required: true, min: 0 }}
           />
         </Section>
         <Section title={t("section-work")}>
           <NumberGroup
             name="workbuilding"
-            placeholder="0.00"
+            placeholder={currencyPlaceholder}
             prefix="$"
             label={t("workbuilding-label")}
             help={t("workbuilding-help")}
             errors={errors.workbuilding}
             errorText={t("err-amount")}
-            ref={register()}
+            control={control}
           />
           <NumberGroup
             name="workdwelling"
-            placeholder="0.00"
+            placeholder={currencyPlaceholder}
             prefix="$"
             label={t("workdwelling-label")}
             help={t("workdwelling-help")}
             errors={errors.workdwelling}
             errorText={t("err-amount")}
-            ref={register()}
+            control={control}
           />
         </Section>
       </div>
