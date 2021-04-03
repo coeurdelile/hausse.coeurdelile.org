@@ -1,8 +1,8 @@
-# Et maintenant ?
+# Et maintenant?
 
-**Vous avez le droit de refuser une augmentation de loyer !** Le Tribunal administratif du logement propose [un modèle d'avis](https://www.tal.gouv.qc.ca/sites/default/files/notices/TAL_810A_E.pdf) que vous pouvez imprimer et remettre à votre propriétaire par courrier recommandé. **Il faut répondre dans un délai d'un mois après la réception de l'avis d'augmentation.**
+**Vous avez le droit de refuser une augmentation de loyer!** Le Tribunal administratif du logement propose [un modèle d'avis](https://www.tal.gouv.qc.ca/sites/default/files/notices/TAL_810A_E.pdf) que vous pouvez imprimer et remettre à votre propriétaire par courrier recommandé. **Il faut répondre dans un délai d'un mois après la réception de l'avis d'augmentation.**
 
-**Si vous avez besoin d'aide**, contactez votre comité local du logement ou votre association de locataires, ou contactez-nous ! Voir ci-dessous.
+**Si vous avez besoin d'aide**, contactez votre comité local du logement ou votre association de locataires, ou contactez-nous! Voir ci-dessous.
 
 Cet outil est basé sur la [fiche d'estimation](https://comitelogementpetitepatrie.org/wp-content/uploads/2021/02/hausse2021.pdf) créée par le [Comité logement de la Petite Patrie](https://comitelogementpetitepatrie.org/). Le Tribunal administratif du logement propose un [outil de calcul en ligne](https://www.tal.gouv.qc.ca/fr/calcul-pour-la-fixation-de-loyer/outil-de-calcul) plus précis, mais il repose sur des informations qui ne sont souvent accessibles qu'aux propriétaires, comme le revenu total de l'immeuble.
 
@@ -18,9 +18,9 @@ Un pamphlet rédigé par le RCLALQ sur le refus d'une hausse de loyer. Disponibl
 Un message sur le site du TAL indiquant les pourcentages utilisés cette année pour calculer l'augmentation des loyers.
 
 
-## Besoin d'aide ?
+## Besoin d'aide?
 
 ### [Regroupement des comités logement et associations de locataires du Québec (RCLALQ)](https://rclalq.qc.ca/)
 
-Le RCLALQ est la fédération québécoise des comités logement et des associations de locataires. Ces comités et associations devraient être votre premier recours pour vous aider à négocier des augmentations de loyer, ou en cas de crise du logement ou de conflit juridique ou extralégal avec votre propriétaire. Consultez leur [carte](https://rclalq.qc.ca/comites-logement/) pour trouver l'association la plus proche de chez vous !
+Le RCLALQ est la fédération québécoise des comités logement et des associations de locataires. Ces comités et associations devraient être votre premier recours pour vous aider à négocier des augmentations de loyer, ou en cas de crise du logement ou de conflit juridique ou extralégal avec votre propriétaire. Consultez leur [carte](https://rclalq.qc.ca/comites-logement/) pour trouver l'association la plus proche de chez vous!
 
