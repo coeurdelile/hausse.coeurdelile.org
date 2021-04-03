@@ -25,7 +25,7 @@ export const MuniModal = ({
       <span key="ref1">
         {t("ref1-1")}
         <a
-          className="underline"
+          className="underline font-bold"
           target="_blank"
           rel="noopener noreferrer"
           href="https://servicesenligne2.ville.montreal.qc.ca/sel/evalweb/"
@@ -67,7 +67,7 @@ export const SchoolModal = ({
       <span key="tfp1txt">
         {t("tfp1-1")}
         <a
-          className="underline"
+          className="underline font-bold"
           target="_blank"
           rel="noopener noreferrer"
           href="https://tfp.cgtsim.qc.ca/asp/tfp.aspx"
@@ -140,7 +140,7 @@ const HelpDialog = ({
         {title}
       </div>
       <SwipeableViews
-        className="h-full mb-4"
+        className="h-full"
         slideClassName="flex flex-col sm:justify-center"
         index={slide}
         onChangeIndex={(i) => {
@@ -148,13 +148,13 @@ const HelpDialog = ({
         }}
       >
         {slides.map(([image, text], i) => (
-          <div key={i}>
+          <div key={i} className="px-2">
             <img className="border border-black mx-auto mb-4" src={image} />
             <div className="mb-1 px-2 mx-auto max-w-xl">{text}</div>
           </div>
         ))}
       </SwipeableViews>
-      <div className="w-full mt-auto px-2 sm:px-4 mb-2 sm:mb-4 flex justify-between items-center">
+      <div className="w-full mt-auto pt-2 px-2 sm:px-4 mb-2 sm:mb-4 flex justify-between items-center">
         <Button
           onClick={() => {
             if (slide > 0) setSlide(slide - 1);
