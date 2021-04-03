@@ -98,9 +98,15 @@ export const NumberInput = ({
                 input.value,
                 input.selectionStart!
               );
-              const parsed = integer
+
+              let parsed = integer
                 ? parseInt(stripped, 10)
                 : parseFloat(stripped);
+
+              // ignore deleting the decimal
+              if (!integer && parsed === Math.round(field.value * 100)) {
+                parsed = field.value;
+              }
 
               field.onChange(parsed || null);
 
