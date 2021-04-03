@@ -160,7 +160,7 @@ const HelpDialog = ({
             if (slide > 0) setSlide(slide - 1);
             else closeModal();
           }}
-          className={`text-lg flex items-center h-8 pl-1 pr-3 text-white ${
+          className={`text-lg flex items-center py-2 pl-1 pr-3 text-white ${
             slide === 0
               ? "bg-indigo-400 hover:bg-indigo-500"
               : "bg-indigo-500 hover:bg-indigo-600"
@@ -177,7 +177,7 @@ const HelpDialog = ({
             if (notLastSlide) setSlide(slide + 1);
             else closeModal();
           }}
-          className={`text-lg flex items-center h-8 pl-3 pr-1 text-white ${
+          className={`text-lg flex items-center py-2 pl-3 pr-1 text-white ${
             notLastSlide
               ? "pr-1 bg-indigo-700 hover:bg-indigo-800"
               : "pr-3 bg-green-700 hover:bg-green-800"
