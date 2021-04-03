@@ -87,7 +87,25 @@ export const SchoolModal = ({
       </div>,
     ],
     ["/images/tfp5.png", t("tfp5")],
-    ["/images/tfp6.png", t("tfp6")],
+    // FIXME: ugh, each slide should just be an mdx block.
+    // this is clunky and won't localize well to other languages either.
+    [
+      "/images/tfp6.png",
+      <div key="tfp6txt">
+        <div className="mb-6">{t("tfp6-1")}</div>
+        <img
+          className="border border-black mx-auto mb-4"
+          src="/images/tfp7.png"
+        />
+        <div className="mb-4">
+          <span>{t("tfp6-2")}</span>
+          <span className="font-bold">{t("tfp6-3")}</span>
+          <span>{t("tfp6-4")}</span>
+          <span className="font-bold">{t("tfp6-5")}</span>
+        </div>
+        <div>{t("tfp6-6")}</div>
+      </div>,
+    ],
   ];
 
   return (

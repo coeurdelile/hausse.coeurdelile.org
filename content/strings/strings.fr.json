@@ -52,7 +52,12 @@
   "tfp4-1": "Vous aurez besoin du numéro de matricule que vous avez obtenu lors de la recherche de votre taxe municipale. (Si vous ne l'avez pas, cliquez sur le bouton d'aide de la section «Taxes municipales» dans notre outil pour savoir comment le trouver.) Collez-le dans le champ, puis supprimez tous les traits d'union et les espaces. (Cette étape est importante! La page vous donnera une erreur si vous ne les supprimez pas.) Cliquez ensuite sur “Rechercher”.",
   "tfp4-2": "Vous pouvez également essayer de rechercher les informations par adresse, mais d'après notre expérience, la recherche d'adresse sur le site Web est très sujette aux erreurs. Nous recommandons la méthode ci-dessus.",
   "tfp5": "Il devrait y avoir un tableau avec une seule entrée sur la page suivante. Cliquez sur le lien sous l'en-tête intitulé “Matricule”.",
-  "tfp6": "La page suivante devrait être un tableau avec les montants des impôts. Copiez les chiffres des deux premières lignes (qui devraient être intitulés “2020-2021” et “2019-2020”). Cliquez ensuite sur “Terminé” et entrez ces chiffres dans les champs de notre outil.",
+  "tfp6-1": "La page suivante devrait être un tableau avec les montants des taxes. Vous aurez besoin des chiffres pour les deux premières lignes (qui devraient être intitulées “2020-2021” et “2019-2020”).",
+  "tfp6-2": "Il se pourrait qu'il y ait plus d'une ligne intitulée “2020-2021” ou “2019-2020”. Dans ce cas, votre valeur pour une année donnée est ",
+  "tfp6-3": "la somme de tous les chiffres de cette année",
+  "tfp6-4": ". Par exemple, dans l'image ci-dessus, le total pour 2019-2020 est de ",
+  "tfp6-5": "29,41 + 699,13 = 728,54.",
+  "tfp6-6": "Lorsque vous avez vos chiffres pour 2020-2021 et 2019-2020, cliquez sur “Terminé” et entrez-les dans les champs de notre outil.",
 
   "section-work": "Améliorations majeures, réparations ou autres travaux",
   "workbuilding-label": "Montant dépensé pour les travaux sur l'immeuble",

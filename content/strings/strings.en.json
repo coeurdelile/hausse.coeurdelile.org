@@ -52,7 +52,12 @@
   "tfp4-1": "You’ll need the “numéro de matricule” you obtained when looking up your municipal tax. (If you don't have it, click the help button for the municipal tax section in our calculator to learn how to find it.) Paste it into the field, and then remove all hyphens and spaces. (This step is important! The page will give you an error if you don’t remove them.) Then click “Rechercher.”",
   "tfp4-2": "You can also attempt to look up the info by address, but in our experience the website's address lookup is very error-prone. We recommend the above method.",
   "tfp5": "There should be a table with only one entry on the following page. Click the link under the header labelled “Matricule.”",
-  "tfp6": "The following page should be a table with tax amounts. Copy the numbers for the top two rows (which should be labelled “2020-2021” and “2019-2020”). Now click “Done” and enter those numbers in the fields on our calculator.",
+  "tfp6-1": "The following page should be a table with tax amounts. You'll need the numbers for the top two rows (which should be labelled “2020-2021” and “2019-2020”).",
+  "tfp6-2": "There may be more than one row labelled “2020-2021” or “2019-2020.” In this case, your value for a given year is ",
+  "tfp6-3": "the sum of all numbers for that year",
+  "tfp6-4": ". For example, in the image above, the total for 2019-2020 is ",
+  "tfp6-5": "29.41 + 699.13 = 728.54.",
+  "tfp6-6": "When you have your numbers for 2020-2021 and 2019-2020, click “Done” and enter them in the fields on our calculator.",
 
   "section-work": "Major improvements, repairs or other work",
   "workbuilding-label": "Amount spent on major work for the whole building",
