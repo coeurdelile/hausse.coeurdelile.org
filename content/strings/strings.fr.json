@@ -61,10 +61,12 @@
 
   "section-work": "Améliorations majeures, réparations ou autres travaux",
   "workbuilding-label": "Montant dépensé pour les travaux sur l'immeuble",
-  "workbuilding-help": "Combien votre propriétaire a-t-il dépensé pour des travaux majeurs (y compris des améliorations ou des réparations importantes) pour l'ensemble du bâtiment, le cas échéant?",
+  "workbuilding-help": "Combien votre propriétaire a-t-il dépensé pour des travaux majeurs (y compris des améliorastions ou des réparations importantes) pour l'ensemble du bâtiment, le cas échéant?",
   "workdwelling-label": "Montant dépensé pour les travaux sur votre logement",
   "workdwelling-help": "Combien votre propriétaire a-t-il dépensé pour des travaux majeurs (y compris des améliorations ou des réparations importantes) pour votre logement en particulier, le cas échéant?",
 
   "estimate": "Estimation d’une hausse de loyer raisonnable",
-  "needfinish": "Remplissez tous les champs obligatoires ci-dessus pour voir votre estimation ici!"
+  "needfinish": "Remplissez tous les champs obligatoires ci-dessus pour voir votre estimation ici!",
+  "neg-1": "(Oui, une estimation négative est possible!)",
+  "neg-2": "En raison d'une baisse des taux d'imposition ou des prix de l'énergie, vous pouvez avoir droit à une baisse de votre loyer."
 }

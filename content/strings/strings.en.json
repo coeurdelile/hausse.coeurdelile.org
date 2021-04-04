@@ -66,5 +66,7 @@
   "workdwelling-help": "How much did your landlord spend on major work (including improvements or major repairs) for your dwelling specifically, if any?",
 
   "estimate": "Your estimated rent increase",
-  "needfinish": "Fill in all the required fields above to see your estimate here!"
+  "needfinish": "Fill in all the required fields above to see your estimate here!",
+  "neg-1": "(Yes, a negative estimate is possible!)",
+  "neg-2": "Due to drops in tax rates or changes in energy prices, you may be entitled to a drop in your rent."
 }

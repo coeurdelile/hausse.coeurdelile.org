@@ -200,11 +200,11 @@ export const Calculator = () => {
           {estimate ? (
             <div>
               <div
-                className={`${headings} text-center text-8xl font-bold italic`}
+                className={`${headings} text-center text-6xl sm:text-8xl font-bold italic`}
               >
                 {lang === "en"
-                  ? `$${estimate}`
-                  : `${estimate.replace(".", ",")} $`}
+                  ? `$${estimate[0]}`
+                  : `${estimate[0].replace(".", ",")} $`}
               </div>
             </div>
           ) : (
@@ -213,6 +213,13 @@ export const Calculator = () => {
             </div>
           )}
         </div>
+        {/* eslint-disable-next-line @typescript-eslint/prefer-optional-chain */}
+        {estimate && estimate[1] && (
+          <div className="mt-4">
+            <div className="text-lg font-bold">{t("neg-1")}</div>
+            <div>{t("neg-2")}</div>
+          </div>
+        )}
       </div>
     </>
   );
@@ -228,7 +235,7 @@ function getEstimate({
   school2020: strSchool2020,
   workbuilding: strWorkbuilding,
   workdwelling: strWorkdwelling,
-}: FormVals): string | false {
+}: FormVals): [total: string, negative: boolean] | false {
   // FIXME later
   const rent = parseInt(strRent!);
   const dwellings = parseInt(strDwellings!);
@@ -266,7 +273,9 @@ function getEstimate({
   const work =
     ((workbuilding || 0) / dwellings + (workdwelling || 0)) * 0.00192;
 
-  return (base + muni + school + work).toFixed(2);
+  const total = base + muni + school + work;
+
+  return [total.toFixed(2), total <= 0];
 }
 
 const Section: React.FC<{ title: string }> = ({ title, children }) => {
