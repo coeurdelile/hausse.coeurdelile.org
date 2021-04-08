@@ -1,6 +1,6 @@
 # Et maintenant?
 
-**Vous avez le droit de refuser une augmentation de loyer!** Le Tribunal administratif du logement propose [un modèle d'avis](https://www.tal.gouv.qc.ca/sites/default/files/notices/TAL_810A_E.pdf) que vous pouvez imprimer et remettre à votre propriétaire par courrier recommandé. **Il faut répondre dans un délai d'un mois après la réception de l'avis d'augmentation.**
+**Vous avez le droit de refuser une augmentation de loyer!** Le Tribunal administratif du logement propose [un modèle d'avis](https://www.tal.gouv.qc.ca/sites/default/files/notices/TAL_810_E.pdf) que vous pouvez imprimer et remettre à votre propriétaire par courrier recommandé. **Il faut répondre dans un délai d'un mois après la réception de l'avis d'augmentation.**
 
 **Si vous avez besoin d'aide**, contactez votre comité local du logement ou votre association de locataires, ou contactez-nous! Voir ci-dessous.
 
