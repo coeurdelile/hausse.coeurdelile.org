@@ -190,7 +190,7 @@ export const Calculator = () => {
             rules={{ required: true, min: 0 }}
           />
           <NumberGroup
-            name="school2020"
+            name="schoolPrevious"
             placeholder={currencyPlaceholder}
             prefix="$"
             required
