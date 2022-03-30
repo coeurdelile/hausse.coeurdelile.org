@@ -6,8 +6,8 @@ export const summarize = (text: string, len: number) => {
   // track back up to 10 characters for a space
   for (let j = 0; j < 10; j++) {
     if (text.charAt(i - j) === " ") {
-      return text.slice(0, i - j) + "…";
+      return `${text.slice(0, i - j)}…`;
     }
   }
-  return text.slice(0, i) + "…";
+  return `${text.slice(0, i)}…`;
 };

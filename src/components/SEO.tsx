@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 import { langList, useSiteData } from "~/lib/site-data";
 import siteInfo from "~/lib/site-info.server";
@@ -19,7 +18,7 @@ const SEO = ({
   const { t, lang } = useSiteData();
 
   const resolvedTitle = `${title} — ${t("siteName")}`;
-  const resolvedDescription = description || t("site_description");
+  const resolvedDescription = description ?? t("site_description");
 
   return (
     <Head>

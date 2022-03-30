@@ -22,16 +22,16 @@ if (domain.endsWith("/")) {
   domain = domain.slice(0, -1);
 }
 
-/** @type {string} */
-const twitter = pkg.twitter;
+/** @type {{ twitter: string }} */
+const { twitter } = pkg;
 if (!twitter) {
   throw new Error(
     "Expected Twitter account to be specified in package.json 'twitter' field!"
   );
 }
 
-/** @type {{domain: string, twitter: string}} */
+/** @type {{ domain: string, twitter: string }} */
 module.exports = () => ({
   cacheable: true,
-  code: "module.exports = " + JSON.stringify({ domain, twitter }),
+  code: `module.exports = ${JSON.stringify({ domain, twitter })}`,
 });

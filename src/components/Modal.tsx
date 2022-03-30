@@ -131,8 +131,8 @@ const HelpDialog = ({
 }) => {
   const { t } = useSiteData();
   const [slide, setSlide] = useState(0);
-  const goToSlide = useCallback((e: React.MouseEvent) => {
-    setSlide(parseInt(e.currentTarget.getAttribute("data-slide")!));
+  const goToSlide = useCallback((e: React.MouseEvent<HTMLElement>) => {
+    setSlide(parseInt(e.currentTarget.dataset["slide"]!));
   }, []);
 
   const notLastSlide = slide < slides.length - 1;

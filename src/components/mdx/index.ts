@@ -2,6 +2,6 @@
 
 import type { ReactChild } from "react";
 
-export const components = ({
+export const components = {
   // Button,
-} as unknown) as Record<string, ReactChild>;
+} as unknown as Record<string, ReactChild>;

@@ -40,7 +40,7 @@ const formatPreservingCursor = (
 
 const formatRaw = (value: string) => {
   let r = value.replace(/[^\d\s,.]/g, "");
-  r = r.replace(/,/g, ".");
+  r = r.replaceAll(",", ".");
   r = r.replace(/\s+/g, "");
   return r;
 };
@@ -99,9 +99,7 @@ export const NumberInput = ({
                 input.selectionStart!
               );
 
-              let parsed = integer
-                ? parseInt(stripped, 10)
-                : parseFloat(stripped);
+              let parsed = integer ? parseInt(stripped) : parseFloat(stripped);
 
               // ignore deleting the decimal
               if (!integer && parsed === Math.round(field.value * 100)) {

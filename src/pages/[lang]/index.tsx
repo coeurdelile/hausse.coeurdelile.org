@@ -139,9 +139,7 @@ export const getStaticProps: GetStaticProps<
 
   const { contents: intro, attributes } = await loadMdx(introPath);
 
-  const title = attributes["title"];
-  const description = attributes["description"];
-  const image = attributes["image"];
+  const { title, description, image } = attributes;
 
   if (!title) {
     throw new Error(`title must not be empty! (in ${introPath})`);

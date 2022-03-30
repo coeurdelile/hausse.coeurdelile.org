@@ -14,7 +14,7 @@ const { fontheadings: headings, subheader } = styles;
 // const positive = (value: any) => parseInt(value, 10) > 0;
 // const lessThan10000 = (value: any) => parseInt(value, 10) < 10_000;
 const wholeNumber = (value: any) =>
-  parseInt(value, 10) === Math.round(parseInt(value, 10));
+  parseInt(value) === Math.round(parseInt(value));
 
 const heatingValuesByYear = {
   2021: {
@@ -283,19 +283,19 @@ function getEstimate({
 
   if (
     rent == null ||
-    isNaN(rent) ||
+    Number.isNaN(rent) ||
     dwellings == null ||
-    isNaN(dwellings) ||
+    Number.isNaN(dwellings) ||
     heat == null ||
-    isNaN(heat) ||
+    Number.isNaN(heat) ||
     muniPrevious == null ||
-    isNaN(muniPrevious) ||
+    Number.isNaN(muniPrevious) ||
     muniCurrent == null ||
-    isNaN(muniCurrent) ||
+    Number.isNaN(muniCurrent) ||
     schoolPrevious == null ||
-    isNaN(schoolPrevious) ||
+    Number.isNaN(schoolPrevious) ||
     schoolCurrent == null ||
-    isNaN(schoolCurrent)
+    Number.isNaN(schoolCurrent)
   ) {
     return false;
   }

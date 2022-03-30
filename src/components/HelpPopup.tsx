@@ -19,7 +19,7 @@ export const HelpPopup: React.FC<{
     <>
       <button
         className={`ml-4 transition-colors text-indigo-700 hover:text-indigo-800 focus:text-indigo-900 focus:outline-none ${
-          className || ""
+          className ?? ""
         }`}
         type="button"
         ref={setTriggerRef}
@@ -37,7 +37,7 @@ export const HelpPopup: React.FC<{
         <div
           ref={setTooltipRef}
           {...getTooltipProps({
-            className: `tooltip-container max-w-md p-3 ${popupClassName || ""}`,
+            className: `tooltip-container max-w-md p-3 ${popupClassName ?? ""}`,
           })}
         >
           <div {...getArrowProps({ className: "tooltip-arrow" })} />
