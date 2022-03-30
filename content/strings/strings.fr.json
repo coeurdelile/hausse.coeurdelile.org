@@ -1,6 +1,8 @@
 {
   "siteName": "Cœur-de-l'Île Antigentrification",
 
+  "updatedForYear": "Mise à jour pour 2022!",
+
   "goto-calc": "Accéder à l'outil d'estimation",
   "desktop": "Si vous n'avez pas sous la main les valeurs des taxes municipales et scolaires pour l'immeuble où vous habitez, nous vous recommandons d'utiliser cet outil sur un ordinateur. Certains des sites Web gouvernementaux que vous devrez utiliser pour trouver les valeurs requises ne sont pas optimisés pour les appareils mobiles.",
   "calc": "Outil d'estimation d'hausse de loyer",
@@ -27,8 +29,8 @@
   "My landlord pays for oil heating": "Mon propriétaire paie le chauffage au mazout (ou autre)",
 
   "section-municipal": "Taxes municipales pour le bâtiment",
-  "muni2021-label": "Taxe municipale pour l’année 2021",
-  "muni2020-label": "Taxe municipale pour l’année 2020",
+  "muniCurrent-label": "Taxe municipale pour l’année 2022",
+  "muniPrevious-label": "Taxe municipale pour l’année 2021",
 
   "ref-title": "Trouver votre taxe municipale",
   "ref1-1": "Pour connaître la modification de la taxe municipale pour votre immeuble, rendez-vous sur le site du ",
@@ -36,12 +38,12 @@
   "ref1-3": " de Montréal. Choisissez “Addresse” et ensuite “Continuer.”",
   "ref2": "Remplissez les détails sur la page suivante.",
   "ref3": "Copiez le numéro de matricule (ou notez-le) et mettez-le de côté. Vous pourrez l'utiliser pour trouver votre taxe scolaire après avoir trouvé votre taxe municipale.",
-  "ref4": "Allez maintenant au bas de la page et cliquez sur “Compte de taxes” pour 2021 et 2020. Ces documents s'ouvriront en format PDF.",
+  "ref4": "Allez maintenant au bas de la page et cliquez sur “Compte de taxes” pour 2022 et 2021. Ces documents s'ouvriront en format PDF.",
   "ref5": "Seul le chiffre intitulé “total du compte”, en bas à droite du tableau de la première page, nous intéresse. Une fois que vous l'avez trouvé dans les deux PDF, cliquez sur “Terminé” ci-dessous et entrez ces chiffres dans les champs de notre outil.",
 
   "section-school": "Taxes scolaires pour le bâtiment",
-  "school2021-label": "Taxe scolaire pour l’année 2020-2021",
-  "school2020-label": "Taxe scolaire pour l’année 2019-2020",
+  "schoolCurrent-label": "Taxe scolaire pour l’année 2021-2022",
+  "schoolPrevious-label": "Taxe scolaire pour l’année 2020-2021",
 
   "tfp-title": "Trouver votre taxe scolaire",
   "tfp1-1": "Pour connaître la modification de la taxe scolaire de l'immeuble, rendez-vous sur le ",
@@ -52,12 +54,12 @@
   "tfp4-1": "Vous aurez besoin du numéro de matricule que vous avez obtenu lors de la recherche de votre taxe municipale. (Si vous ne l'avez pas, cliquez sur le bouton d'aide de la section «Taxes municipales» dans notre outil pour savoir comment le trouver.) Collez-le dans le champ, puis supprimez tous les traits d'union et les espaces. (Cette étape est importante! La page vous donnera une erreur si vous ne les supprimez pas.) Cliquez ensuite sur “Rechercher”.",
   "tfp4-2": "Vous pouvez également essayer de rechercher les informations par adresse, mais d'après notre expérience, la recherche d'adresse sur le site Web est très sujette aux erreurs. Nous recommandons la méthode ci-dessus.",
   "tfp5": "Il devrait y avoir un tableau avec une seule entrée sur la page suivante. Cliquez sur le lien sous l'en-tête intitulé “Matricule”.",
-  "tfp6-1": "La page suivante devrait être un tableau avec les montants des taxes. Vous aurez besoin des chiffres pour les deux premières lignes (qui devraient être intitulées “2020-2021” et “2019-2020”).",
-  "tfp6-2": "Il se pourrait qu'il y ait plus d'une ligne intitulée “2020-2021” ou “2019-2020”. Dans ce cas, votre valeur pour une année donnée est ",
+  "tfp6-1": "La page suivante devrait être un tableau avec les montants des taxes. Vous aurez besoin des chiffres pour les deux premières lignes (qui devraient être intitulées “2021-2022” et “2020-2021”).",
+  "tfp6-2": "Il se pourrait qu'il y ait plus d'une ligne intitulée “2021-2022” ou “2020-2021”. Dans ce cas, votre valeur pour une année donnée est ",
   "tfp6-3": "la somme de tous les chiffres de cette année",
   "tfp6-4": ". Par exemple, dans l'image ci-dessus, le total pour 2019-2020 est de ",
   "tfp6-5": "29,41 + 699,13 = 728,54.",
-  "tfp6-6": "Lorsque vous avez vos chiffres pour 2020-2021 et 2019-2020, cliquez sur “Terminé” et entrez-les dans les champs de notre outil.",
+  "tfp6-6": "Lorsque vous avez vos chiffres pour 2021-2022 et 2020-2021, cliquez sur “Terminé” et entrez-les dans les champs de notre outil.",
 
   "section-work": "Améliorations majeures, réparations ou autres travaux",
   "workbuilding-label": "Montant dépensé pour les travaux sur l'immeuble",

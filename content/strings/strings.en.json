@@ -1,6 +1,8 @@
 {
   "siteName": "Cœur-de-l'Île Antigentrification",
 
+  "updatedForYear": "Finally updated for 2022!",
+
   "goto-calc": "Use the Calculator!",
   "desktop": "If you don't have municipal and school tax values on hand for the building you live in, we recommend you use this tool on a computer. Some of the government websites you’ll need to use to find the required values are not optimized for mobile devices.",
   "calc": "Rent Increase Estimate Calculator",
@@ -27,8 +29,8 @@
   "My landlord pays for oil heating": "My landlord pays for oil (or other) heating",
 
   "section-municipal": "Municipal taxes for the building",
-  "muni2021-label": "Municipal tax for 2021",
-  "muni2020-label": "Municipal tax for 2020",
+  "muniCurrent-label": "Municipal tax for 2022",
+  "muniPrevious-label": "Municipal tax for 2021",
 
   "ref-title": "Finding your Municipal Tax",
   "ref1-1": "To find the change in municipal tax for your building, go to the Montréal ",
@@ -36,12 +38,12 @@
   "ref1-3": " (property assessment roll) site. Pick “Addresse” and then “Continuer.”",
   "ref2": "Fill in the details on the next page. We've translated the fields in the screenshot above to make things easier.",
   "ref3": "Copy the “numéro de matricule” (or write it down) and put it aside. You can use it to help find your school tax after you've found your municipal tax.",
-  "ref4": "Now go to the bottom of the page and click on “Compte de taxes” for both 2021 and 2020. These will open PDF documents.",
+  "ref4": "Now go to the bottom of the page and click on “Compte de taxes” for both 2022 and 2021. These will open PDF documents.",
   "ref5": "We only care about the number labelled “Total du compte” in the bottom right of the table on the first page. Once you've found it in both PDFs, click “Done” below and enter those numbers in the fields on our calculator.",
 
   "section-school": "School taxes for the building",
-  "school2021-label": "School tax for 2020-2021",
-  "school2020-label": "School tax for 2019-2020",
+  "schoolCurrent-label": "School tax for 2021-2022",
+  "schoolPrevious-label": "School tax for 2020-2021",
 
   "tfp-title": "Finding your School Tax",
   "tfp1-1": "To find the change in school tax for the building, go to the ",
@@ -52,12 +54,12 @@
   "tfp4-1": "You’ll need the “numéro de matricule” you obtained when looking up your municipal tax. (If you don't have it, click the help button for the municipal tax section in our calculator to learn how to find it.) Paste it into the field, and then remove all hyphens and spaces. (This step is important! The page will give you an error if you don’t remove them.) Then click “Rechercher.”",
   "tfp4-2": "You can also attempt to look up the info by address, but in our experience the website's address lookup is very error-prone. We recommend the above method.",
   "tfp5": "There should be a table with only one entry on the following page. Click the link under the header labelled “Matricule.”",
-  "tfp6-1": "The following page should be a table with tax amounts. You'll need the numbers for the top two rows (which should be labelled “2020-2021” and “2019-2020”).",
-  "tfp6-2": "There may be more than one row labelled “2020-2021” or “2019-2020.” In this case, your value for a given year is ",
+  "tfp6-1": "The following page should be a table with tax amounts. You'll need the numbers for the top two rows (which should be labelled “2021-2022” and “2020-2021”).",
+  "tfp6-2": "There may be more than one row labelled “2021-2022” or “2020-2021.” In this case, your value for a given year is ",
   "tfp6-3": "the sum of all numbers for that year",
   "tfp6-4": ". For example, in the image above, the total for 2019-2020 is ",
   "tfp6-5": "29.41 + 699.13 = 728.54.",
-  "tfp6-6": "When you have your numbers for 2020-2021 and 2019-2020, click “Done” and enter them in the fields on our calculator.",
+  "tfp6-6": "When you have your numbers for 2021-2022 and 2020-2021, click “Done” and enter them in the fields on our calculator.",
 
   "section-work": "Major improvements, repairs or other work",
   "workbuilding-label": "Amount spent on major work for the whole building",
