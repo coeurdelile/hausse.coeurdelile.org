@@ -2,6 +2,10 @@
   publish = "out"
   command = "yarn export"
 
+# https://github.com/netlify/netlify-plugin-nextjs/blob/75952b39e257125cdf41c6f00836f20f34ad60e9/demos/next-export/README.md
+[build.environment]
+NETLIFY_NEXT_PLUGIN_SKIP = "true"
+
 [[plugins]]
   package = "netlify-plugin-cache-nextjs"
 
