@@ -196,10 +196,10 @@ const HelpDialog = ({
             if (notLastSlide) setSlide(slide + 1);
             else closeModal();
           }}
-          className={`text-lg flex items-center py-2 pl-3 pr-1 text-white ${
+          className={`text-lg flex items-center py-2 pl-3 text-white ${
             notLastSlide
               ? "pr-1 bg-indigo-700 hover:bg-indigo-800"
-              : "pr-3 bg-green-700 hover:bg-green-800"
+              : "pr-3 bg-emerald-700 hover:bg-emerald-800"
           }`}
         >
           <span>{notLastSlide ? t("next") : t("done")}</span>
