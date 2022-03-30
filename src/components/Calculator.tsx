@@ -13,16 +13,36 @@ import { headings, subheader } from "~/styles/utils";
 const wholeNumber = (value: any) =>
   parseInt(value, 10) === Math.round(parseInt(value, 10));
 
+const heatingValuesByYear = {
+  2021: {
+    anyPaidBySelf: 0.008,
+    electricPaidByLandlord: 0.005,
+    gasPaidByLandlord: -0.003,
+    oilPaidByLandlord: -0.023,
+  },
+  2022: {
+    anyPaidBySelf: 0.0128,
+    electricPaidByLandlord: 0.0134,
+    gasPaidByLandlord: 0.0191,
+    oilPaidByLandlord: 0.0373,
+  },
+};
+
+const improvementRateByYear = {
+  2021: 0.00192,
+  2022: 0.00167,
+};
+
 interface FormVals {
   rent?: string;
   dwellings?: string;
   heat?: number;
 
-  muni2021?: string;
-  muni2020?: string;
+  muniCurrent?: string;
+  muniPrevious?: string;
 
-  school2021?: string;
-  school2020?: string;
+  schoolCurrent?: string;
+  schoolPrevious?: string;
 
   workbuilding?: string;
   workdwelling?: string;
@@ -88,10 +108,22 @@ export const Calculator = () => {
           <SelectGroup
             name="heat"
             options={[
-              [t("I pay for heating myself"), 0.008],
-              [t("My landlord pays for electric heating"), 0.005],
-              [t("My landlord pays for gas heating"), -0.003],
-              [t("My landlord pays for oil heating"), -0.023],
+              [
+                t("I pay for heating myself"),
+                heatingValuesByYear[2022].anyPaidBySelf,
+              ],
+              [
+                t("My landlord pays for electric heating"),
+                heatingValuesByYear[2022].electricPaidByLandlord,
+              ],
+              [
+                t("My landlord pays for gas heating"),
+                heatingValuesByYear[2022].gasPaidByLandlord,
+              ],
+              [
+                t("My landlord pays for oil heating"),
+                heatingValuesByYear[2022].oilPaidByLandlord,
+              ],
             ]}
             label={t("heat-label")}
             help={t("heat-help")}
@@ -111,23 +143,23 @@ export const Calculator = () => {
           <MuniModal active={activeModal === "muni"} closeModal={closeModal} />
 
           <NumberGroup
-            name="muni2021"
+            name="muniCurrent"
             placeholder={currencyPlaceholder}
             prefix="$"
             required
-            label={t("muni2021-label")}
-            errors={errors.muni2021}
+            label={t("muniCurrent-label")}
+            errors={errors.muniCurrent}
             errorText={t("err-amount")}
             control={control}
             rules={{ required: true, min: 0 }}
           />
           <NumberGroup
-            name="muni2020"
+            name="muniPrevious"
             placeholder={currencyPlaceholder}
             prefix="$"
             required
-            label={t("muni2020-label")}
-            errors={errors.muni2020}
+            label={t("muniPrevious-label")}
+            errors={errors.muniPrevious}
             errorText={t("err-amount")}
             control={control}
             rules={{ required: true, min: 0 }}
@@ -147,12 +179,12 @@ export const Calculator = () => {
           />
 
           <NumberGroup
-            name="school2021"
+            name="schoolCurrent"
             placeholder={currencyPlaceholder}
             prefix="$"
             required
-            label={t("school2021-label")}
-            errors={errors.school2021}
+            label={t("schoolCurrent-label")}
+            errors={errors.schoolCurrent}
             errorText={t("err-amount")}
             control={control}
             rules={{ required: true, min: 0 }}
@@ -162,8 +194,8 @@ export const Calculator = () => {
             placeholder={currencyPlaceholder}
             prefix="$"
             required
-            label={t("school2020-label")}
-            errors={errors.school2020}
+            label={t("schoolPrevious-label")}
+            errors={errors.schoolPrevious}
             errorText={t("err-amount")}
             control={control}
             rules={{ required: true, min: 0 }}
@@ -229,20 +261,20 @@ function getEstimate({
   rent: strRent,
   dwellings: strDwellings,
   heat,
-  muni2021: strMuni2021,
-  muni2020: strMuni2020,
-  school2021: strSchool2021,
-  school2020: strSchool2020,
+  muniCurrent: strMuniCurrent,
+  muniPrevious: strMuniPrevious,
+  schoolCurrent: strSchoolCurrent,
+  schoolPrevious: strSchoolPrevious,
   workbuilding: strWorkbuilding,
   workdwelling: strWorkdwelling,
 }: FormVals): [total: string, negative: boolean] | false {
   // FIXME later
   const rent = parseInt(strRent!);
   const dwellings = parseInt(strDwellings!);
-  const muni2021 = parseInt(strMuni2021!);
-  const muni2020 = parseInt(strMuni2020!);
-  const school2021 = parseInt(strSchool2021!);
-  const school2020 = parseInt(strSchool2020!);
+  const muniCurrent = parseInt(strMuniCurrent!);
+  const muniPrevious = parseInt(strMuniPrevious!);
+  const schoolCurrent = parseInt(strSchoolCurrent!);
+  const schoolPrevious = parseInt(strSchoolPrevious!);
   const workbuilding = parseInt(strWorkbuilding!);
   const workdwelling = parseInt(strWorkdwelling!);
 
@@ -253,25 +285,26 @@ function getEstimate({
     isNaN(dwellings) ||
     heat == null ||
     isNaN(heat) ||
-    muni2020 == null ||
-    isNaN(muni2020) ||
-    muni2021 == null ||
-    isNaN(muni2021) ||
-    school2020 == null ||
-    isNaN(school2020) ||
-    school2021 == null ||
-    isNaN(school2021)
+    muniPrevious == null ||
+    isNaN(muniPrevious) ||
+    muniCurrent == null ||
+    isNaN(muniCurrent) ||
+    schoolPrevious == null ||
+    isNaN(schoolPrevious) ||
+    schoolCurrent == null ||
+    isNaN(schoolCurrent)
   ) {
     return false;
   }
 
   const base = rent * heat;
 
-  const muni = (muni2021 - muni2020) / dwellings / 12;
-  const school = (school2021 - school2020) / dwellings / 12;
+  const muni = (muniCurrent - muniPrevious) / dwellings / 12;
+  const school = (schoolCurrent - schoolPrevious) / dwellings / 12;
 
   const work =
-    ((workbuilding || 0) / dwellings + (workdwelling || 0)) * 0.00192;
+    ((workbuilding || 0) / dwellings + (workdwelling || 0)) *
+    improvementRateByYear[2022];
 
   const total = base + muni + school + work;
 
