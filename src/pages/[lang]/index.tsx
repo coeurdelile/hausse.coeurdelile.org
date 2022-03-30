@@ -46,11 +46,11 @@ const Index = ({ intro, outro, title, description, image }: PageProps) => {
         {lang === "en" ? <a href="/fr">Français</a> : <a href="/en">English</a>}
       </div>
       <img
-        className="mx-auto px-2 md:px-0 w-full md:w-2/3 max-w-xl mt-16 mb-8"
+        className="mx-auto px-2 md:px-0 w-full md:w-2/3 max-w-xl mt-16"
         src={image}
       />
       <div
-        className={`${headings} mx-auto w-64 h-64 p-6 rounded-full bg-pink-400 text-4xl text-center font-bold flex justify-center items-center mb-16`}
+        className={`${headings} mx-auto w-64 h-64 p-6 rounded-full bg-pink-400 text-4xl text-center font-bold flex justify-center items-center mb-8`}
       >
         {t("updatedForYear")}
       </div>
