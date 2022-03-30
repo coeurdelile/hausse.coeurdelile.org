@@ -8,10 +8,10 @@
   "scripts": {
     "start": "echo '\\033[0;31m=======\\nOpen http://localhost:3000/en to start!\\n=======' && next dev",
     "export": "next build && next export",
-    "test": "run-s -l test:*",
-    "test:eslint": "eslint '{src,test}/**/*.{js,ts,tsx}'",
-    "test:prettier": "prettier '{src,test}/**/*.{css,js,ts,tsx}' -l",
-    "test:ts": "tsc --noEmit",
+    "test": "run-p -cl test:*",
+    "test:eslint": "eslint --color --max-warnings=0 '{src,test}/**/*.{js,ts,tsx}'",
+    "test:prettier": "prettier -l '{src,test}/**/*.{css,js,ts,tsx}'",
+    "test:ts": "tsc --pretty --noEmit",
     "test:stylelint": "stylelint 'src/**/*.{css,tsx}'",
     "prettier": "prettier --write '{src,test}/**/*.{css,js,ts,tsx}'"
   },
