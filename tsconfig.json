@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "strict": true,
-    // "noUncheckedIndexedAccess": true,
-    "noPropertyAccessFromIndexSignature": true,
+    "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
+    "strict": true,
+    // "noUncheckedIndexedAccess": true,
+    "noPropertyAccessFromIndexSignature": true,
     "esModuleInterop": true,
-    "target": "es5",
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
     "moduleResolution": "node",
@@ -30,7 +30,7 @@
   "include": [
     "src",
     "next-env.d.ts",
-    "next.config.js"
+    "*.config.js"
   ],
   "exclude": [
     "node_modules"

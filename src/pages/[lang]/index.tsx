@@ -5,15 +5,17 @@ import { Button } from "~/components/Button";
 import { Calculator } from "~/components/Calculator";
 import { useSiteData } from "~/lib/site-data";
 
-import { headings } from "~/styles/utils";
-
 import logo from "~/images/logo.svg";
 import twitter from "~/images/twitter.svg";
 import email from "~/images/email.svg";
 
 import siteInfo from "~/lib/site-info.server";
 
+import styles from "~/styles/utils.module.css";
+
 import type { GetStaticProps } from "next";
+
+const { fontheadings: headings } = styles;
 
 const twUrl = `https://twitter.com/${siteInfo.twitter.slice(1)}`;
 

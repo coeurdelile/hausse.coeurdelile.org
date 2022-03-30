@@ -1,0 +1,19 @@
+.fontheadings {
+  font-family: var(--font-headings);
+}
+
+.subheader {
+  composes: text-2xl font-bold mb-5 from global;
+}
+
+.mwxxs {
+  max-width: 10rem;
+}
+
+/*
+ * TODO: this might be available or easily implemented in tailwind 3?
+ * https://tailwindcss.com/docs/upgrading-to-v2#the-scrolling-touch-and-scrolling-auto-utilities-have-been-removed
+ */
+.scrollingtouch {
+  --webkit-overflow-scrolling: touch;
+}

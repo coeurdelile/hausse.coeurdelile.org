@@ -1,16 +1,16 @@
 module.exports = {
-  purge: ["./src/**/*.tsx"],
-  darkMode: false, // or 'media' or 'class'
+  purge: ["./src/**/*.tsx", "./src/**/*.css"],
+  darkMode: false,
   theme: {
     extend: {
       typography: {
         DEFAULT: {
           css: {
             color: "#101316",
-            h1: {
-              marginTop: "1.4em",
-              marginBottom: 0,
-            },
+            // h1: {
+            //   marginTop: "1.4em",
+            //   marginBottom: 0,
+            // },
             h1: {
               fontFamily: "Barlow Black",
               fontStyle: "italic",
@@ -41,7 +41,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    //
+    // hey prettier please put this on multiple lines thx
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
   ],

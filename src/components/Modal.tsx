@@ -1,12 +1,13 @@
 import React, { useCallback, useState } from "react";
-import { css } from "astroturf";
 import Modal from "react-modal";
 import SwipeableViews from "react-swipeable-views";
 
 import { Button } from "~/components/Button";
 import { useSiteData } from "~/lib/site-data";
 
-import { headings } from "~/styles/utils";
+import styles from "~/styles/utils.module.css";
+
+const { fontheadings: headings, scrollingtouch } = styles;
 
 Modal.setAppElement("#__next");
 
@@ -213,16 +214,11 @@ const HelpDialog = ({
   );
 };
 
-// https://tailwindcss.com/docs/upgrading-to-v2#the-scrolling-touch-and-scrolling-auto-utilities-have-been-removed
-const scrollingTouch = css`
-  --webkit-overflow-scrolling: touch;
-`;
-
 // removed modal default styles:
 // border-radius: 4px;
 // padding: 20px;
 
-const modalContent = `${scrollingTouch} max-w-3xl outline-none border border-gray-300 bg-white overflow-auto m-auto absolute inset-2 sm:inset-10`;
+const modalContent = `${scrollingtouch} max-w-3xl outline-none border border-gray-300 bg-white overflow-auto m-auto absolute inset-2 sm:inset-10`;
 
 export const BaseModal: React.FC<{
   active: boolean;

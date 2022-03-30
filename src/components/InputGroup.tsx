@@ -5,7 +5,9 @@ import { HelpPopup } from "~/components/HelpPopup";
 import { NumberInput } from "~/components/NumberInput";
 import { useSiteData } from "~/lib/site-data";
 
-import { mwxxs } from "~/styles/utils";
+import styles from "~/styles/utils.module.css";
+
+const { mwxxs } = styles;
 
 export const NumberGroup = ({
   label,
