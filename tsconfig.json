@@ -11,21 +11,22 @@
     "noPropertyAccessFromIndexSignature": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "skipLibCheck": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    "incremental": true,
     "jsx": "preserve",
-    "allowJs": true,
-    "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
       "~/*": [
         "src/*"
       ]
-    }
+    },
   },
   "include": [
     "src",
