@@ -44,9 +44,12 @@ const Index = ({ intro, outro, title, description, image }: PageProps) => {
         {lang === "en" ? <a href="/fr">Français</a> : <a href="/en">English</a>}
       </div>
       <img
-        className="mx-auto px-2 md:px-0 w-full md:w-2/3 max-w-xl mt-16 mb-16"
+        className="mx-auto px-2 md:px-0 w-full md:w-2/3 max-w-xl mt-16 mb-8"
         src={image}
       />
+      <div className="mx-auto w-64 h-64 p-6 rounded-full bg-pink-400 text-4xl text-center font-bold flex justify-center items-center mb-16">
+        {t("updatedForYear")}
+      </div>
 
       <a href="#calc">
         <Button className="mx-auto mb-12 flex items-center px-5 py-2 text-xl text-white bg-indigo-700 hover:bg-indigo-800">
