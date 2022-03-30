@@ -1,6 +1,5 @@
 module.exports = {
-  purge: ["./src/**/*.tsx", "./src/**/*.css"],
-  darkMode: false,
+  content: ["./src/**/*.{tsx,css}"],
   theme: {
     extend: {
       typography: {
@@ -36,9 +35,6 @@ module.exports = {
         },
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [
     // hey prettier please put this on multiple lines thx

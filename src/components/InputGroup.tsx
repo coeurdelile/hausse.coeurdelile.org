@@ -96,7 +96,7 @@ export const SelectGroup = React.forwardRef<
           <label id={`${name}-label`}>{label}</label>
           {help && <HelpPopup>{help}</HelpPopup>}
         </div>
-        <div className="md:w-1/2 md:flex-grow">
+        <div className="md:w-1/2 md:grow">
           <div className="relative text-gray-700">
             <select
               className={`w-full rounded-lg ${errors ? "border-red-700" : ""}`}
